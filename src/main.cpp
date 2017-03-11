@@ -1,4 +1,8 @@
 #include <iostream>
+//#include calcarea.h
+//#include calcperimetro.h
+//#include calcvolume.h
+
 
 using std::cin;
 using std::cout;
@@ -8,6 +12,40 @@ using namespace std;
 
 void menuChoice(int choice) {
 	switch(choice) {
+		case 1:
+		 	//calc_triangulo_area();
+			//calc_triangulo_perimeto(); 
+			break;
+		case 2:
+			//calc_retangulo_area(); 
+			//calc_retangulo_perimetro();
+			break;
+		case 3:
+			//calc_quadrado_area();
+			//calc_quadrado_perimetro();
+			break;
+		case 4:
+			//calc_circulo_area();
+			//calc_circulo_perimetro();
+			break;
+		case 5:
+			//calc_piramide_area();
+			//calc_piramide_volume();
+			break;
+		case 6:
+			//calc_cubo_area();
+			//calc_cubo_volume();
+			break;
+		case 7:
+			//calc_paralelepipedo_area();
+			//calc_paralelepipedo_volume();
+			break;
+		case 8:
+			//calc_esfera_area();
+			//calc_esfera_volume();
+			break;
+
+		default:
 
 	}
 }
@@ -35,6 +73,8 @@ int main() {
 		cin >> choice;
 		menuChoice(choice);	
 	} while (choice);
-	
+
+	//menuChoice(choice);
+
 	return 0;
 }
