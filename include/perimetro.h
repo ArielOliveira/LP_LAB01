@@ -5,7 +5,7 @@ float trianguloPerimetro(float& base);
 
 float retanguloPerimetro(float& base, float& altura);
 
-float retanguloPerimetro(float& base);
+float quadradoPerimetro(float& base);
 
 float circuloPerimetro(float& raio);
 

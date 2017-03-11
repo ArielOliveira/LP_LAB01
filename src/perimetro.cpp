@@ -10,7 +10,7 @@ float retanguloPerimetro(float& base, float& altura) {
 	return 2 * (base + altura);
 }
 
-float retanguloPerimetro(float& base) {
+float quadradoPerimetro(float& base) {
 	return 4 * base;
 }
 

@@ -7,7 +7,7 @@ BIN_DIR = ./bin
 
 CC = g++
 
-RM = rm - rf
+RM = rm -rf
 
 OBJS = ./build/main.o ./build/area.o ./build/calcarea.o ./build/calcvolume.o ./build/volume.o  ./build/calcperimetro.o ./build/perimetro.o
 

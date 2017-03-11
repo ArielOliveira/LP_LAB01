@@ -15,19 +15,19 @@ void triangulo() {
 
 void retangulo() {
 	float base, altura;
-	//calc_retangulo_area(base, altura); 
+	calc_retangulo_area(base, altura); 
 	calc_retangulo_perimetro(base, altura);
 }
 
 void quadrado() {
 	float base;
-	//calc_quadrado_area();
+	calc_quadrado_area(base);
 	calc_quadrado_perimetro(base);
 }
 
 void circulo() {
 	float raio;
-	//calc_circulo_area();
+	calc_circulo_area(raio);
 	calc_circulo_perimetro(raio);
 }
 

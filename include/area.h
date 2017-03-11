@@ -3,7 +3,7 @@
 
 float trianguloArea(float& base);
 
-float rectanguloArea(float& base, float& altura);
+float retanguloArea(float& base, float& altura);
 
 float quadradoArea(float& lado);
 
