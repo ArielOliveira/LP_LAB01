@@ -1,23 +1,17 @@
-#include <iostream>
 #include <cmath>
 #include "../include/area.h"
 
-using std::cout;
-using std::endl;
-
 #define PI 3,1415
-#define pythagoras(a,b) (pow(a,2) + pow(b,2))
+#define pitagoras(a,b) (pow(a,2) - pow(b,2))
 
-
-
-void triangle(float base, float& area, float& p) {
-	float height;
-	height = pythagoras(base / 2, base);
-	cout << height << endl;
-	area = (base * height) / 2;
-	cout << area << endl;
-	p = base * 3;
-
-}
+float trianguloArea(float& base) {
+	
+	float altura;
+	altura = pitagoras(base / 2, base);
+	altura = altura - (altura * 2);
+	altura = sqrt(altura);
+	
+	return  (base * altura) / 2;
+} 	
 
 

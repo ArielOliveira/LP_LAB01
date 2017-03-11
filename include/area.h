@@ -1,12 +1,12 @@
 #ifndef AREA_H
 #define AREA_H
 
-void triangle(float base, float& area, float& p);
+float trianguloArea(float& base);
 
-float rectangle(float base, float height);
+float rectanguloArea(float& base, float& altura);
 
-float square(float side);
+float quadradoArea(float& lado);
 
-float circle(float radius);
+float circuloArea(float& raio);
 
 #endif

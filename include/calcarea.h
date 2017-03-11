@@ -2,6 +2,6 @@
 #define CALCAREA_H
 #include "area.h"
 
-void calcRequest(int choice);
+void calc_triangulo_area(float& base);
 
 #endif

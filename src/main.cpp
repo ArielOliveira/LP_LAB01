@@ -1,48 +1,88 @@
 #include <iostream>
 #include "../include/calcarea.h"
 #include "../include/calcvolume.h"
+#include "../include/calcperimetro.h"
 
 using std::cin;
 using std::cout;
 using std::endl;
 
-using namespace std;
+void triangulo() {
+	float base;
+	calc_triangulo_area(base);
+	calc_triangulo_perimetro(base);
+}
+
+void retangulo() {
+	float base, altura;
+	//calc_retangulo_area(base, altura); 
+	calc_retangulo_perimetro(base, altura);
+}
+
+void quadrado() {
+	float base;
+	//calc_quadrado_area();
+	calc_quadrado_perimetro(base);
+}
+
+void circulo() {
+	float raio;
+	//calc_circulo_area();
+	calc_circulo_perimetro(raio);
+}
+
+void piramide() {
+	float base, altura;
+	//calc_piramide_area();
+	calc_piramide_volume(base, altura);
+}
+
+void cubo() {
+	float aresta;
+	//calc_cubo_area();
+	calc_cubo_volume(aresta);
+}
+
+void paralelepipedo() {
+	float aresta1, aresta2, aresta3;
+	//calc_paralelepipedo_area();
+	calc_paralelepipedo_volume(aresta1, aresta2, aresta3);
+}
+
+void esfera() {
+	float raio;
+	//calc_esfera_area();
+	calc_esfera_volume(raio);
+}
 
 void menuChoice(int choice) {
 	switch(choice) {
-
-		case 1: calcRequest(choice);
+		case 1: 
+			triangulo();		
 		 	break;
 		case 2:
-			//calc_retangulo_area(); 
-			//calc_retangulo_perimetro();
+			retangulo();
 			break;
 		case 3:
-			//calc_quadrado_area();
-			//calc_quadrado_perimetro();
+			quadrado();
 			break;
 		case 4:
-			//calc_circulo_area();
-			//calc_circulo_perimetro();
+			circulo();
 			break;
 		case 5:
-			//calc_piramide_area();
-			calc_piramide_volume();
+			piramide();
 			break;
 		case 6:
-			//calc_cubo_area();
-			calc_cubo_volume();
+			cubo();
 			break;
 		case 7:
-			//calc_paralelepipedo_area();
-			calc_paralelepipedo_volume();
+			paralelepipedo();
 			break;
 		case 8:
-			//calc_esfera_area();
-			calc_esfera_volume();
+			esfera();
 			break;
-
 		default:
+			if (choice > 8) cout << "Opção inválida!" << endl;
 			break;
 	}
 }
@@ -70,6 +110,7 @@ int main() {
 		cin >> choice;
 		menuChoice(choice);	
 	} while (choice);
+	cout << "Saindo..." << endl;
 
 	return 0;
 }
