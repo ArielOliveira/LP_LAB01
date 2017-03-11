@@ -1,7 +1,7 @@
 #include <iostream>
 //#include calcarea.h
 //#include calcperimetro.h
-//#include calcvolume.h
+#include "calcvolume.h"
 
 
 using std::cin;
@@ -30,23 +30,23 @@ void menuChoice(int choice) {
 			break;
 		case 5:
 			//calc_piramide_area();
-			//calc_piramide_volume();
+			calc_piramide_volume();
 			break;
 		case 6:
 			//calc_cubo_area();
-			//calc_cubo_volume();
+			calc_cubo_volume();
 			break;
 		case 7:
 			//calc_paralelepipedo_area();
-			//calc_paralelepipedo_volume();
+			calc_paralelepipedo_volume();
 			break;
 		case 8:
 			//calc_esfera_area();
-			//calc_esfera_volume();
+			calc_esfera_volume();
 			break;
 
 		default:
-
+			break;
 	}
 }
 
@@ -74,7 +74,7 @@ int main() {
 		menuChoice(choice);	
 	} while (choice);
 
-	//menuChoice(choice);
+	menuChoice(choice);
 
 	return 0;
 }
