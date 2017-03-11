@@ -9,7 +9,7 @@ CC = g++
 
 RM = rm - rf
 
-OBJS = ./build/main.o
+OBJS = ./build/main.o ./build/area.o ./build/calcarea.o
 
 CPPFLAGS = -Wall -pedantic -ansi -std=c++11 -I. -I$(INC_DIR)
 
@@ -17,6 +17,12 @@ $(PROG): $(OBJS)
 	$(CC) $^ $(CPPFLAGS) -o $@
 
 $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp
+	$(CC) -c $(CPPFLAGS) $^ -o $@
+
+$(OBJ_DIR)/area.o: $(SRC_DIR)/area.cpp
+	$(CC) -c $(CPPFLAGS) $^ -o $@
+
+$(OBJ_DIR)/calcarea.o: $(SRC_DIR)/calcarea.cpp
 	$(CC) -c $(CPPFLAGS) $^ -o $@
 
 clean:

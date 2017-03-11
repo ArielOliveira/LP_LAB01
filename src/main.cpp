@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../include/calcarea.h"
 
 using std::cin;
 using std::cout;
@@ -8,6 +9,9 @@ using namespace std;
 
 void menuChoice(int choice) {
 	switch(choice) {
+		case 1: calcRequest(choice);
+		 	break;
+
 
 	}
 }
@@ -24,7 +28,8 @@ void menu() {
 	cout << "(8) Esfera" << endl;
 	cout << "(0) Sair" << endl;
 	cout << endl;
-	cout << "Digite a sua opcao: " << endl;
+	cout << "Digite a sua opcao: ";
+	cout << endl;
 }
 
 int main() {
