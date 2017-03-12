@@ -1,19 +1,11 @@
-#include <iostream>
-#include <cmath>
 #include "volume.h"
 
-#define PI  3.14
-
-using std::cin;
-using std::cout;
-using std::endl;
-
 float volume_piramide(float &base, float &altura){
-	return (base * altura) * 1/3;
+	return (pow(base,2) * altura) * 1/3;
 }
 
 float volume_cubo(float &aresta){
-	return aresta * aresta * aresta;
+	return pow(aresta,3);
 }
 
 float volume_paralelepipedo(float &aresta1, float &aresta2, float &aresta3){
@@ -21,5 +13,5 @@ float volume_paralelepipedo(float &aresta1, float &aresta2, float &aresta3){
 }
 
 float volume_esfera(float &raio){
-	return PI * raio * 4/3;
+	return PI * pow(raio,3) * 4/3;
 }

@@ -33,26 +33,30 @@ void circulo() {
 
 void piramide() {
 	float base, altura;
-	//calc_piramide_area();
 	calc_piramide_volume(base, altura);
+	calc_piramide_area(base, altura);
+	
 }
 
 void cubo() {
 	float aresta;
-	//calc_cubo_area();
 	calc_cubo_volume(aresta);
+	calc_cubo_area(aresta);
+	
 }
 
 void paralelepipedo() {
 	float aresta1, aresta2, aresta3;
-	//calc_paralelepipedo_area();
 	calc_paralelepipedo_volume(aresta1, aresta2, aresta3);
+	calc_paralelepipedo_area(aresta1, aresta2, aresta3);
+	
 }
 
 void esfera() {
 	float raio;
-	//calc_esfera_area();
 	calc_esfera_volume(raio);
+	calc_esfera_area(raio);
+	
 }
 
 void menuChoice(int choice) {

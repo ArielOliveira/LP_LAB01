@@ -24,3 +24,20 @@ float quadradoArea(float& lado) {
 float circuloArea(float& raio) {
 	return PI * pow(raio,2);
 }
+
+float area_piramide(float& base,float& altura){
+	return (trianguloArea(base) * 4) + (base * base);
+}
+
+float area_cubo(float& aresta){
+	return 6 * pow(aresta,2);
+}
+
+float area_paralelepipedo(float& aresta1,float& aresta2,float& aresta3){
+	return (2 * aresta1 * aresta2) + (2 * aresta1 * aresta3) + (2 * aresta2 * aresta3);
+}
+
+float area_esfera(float& raio){
+	return 4 * PI * pow(raio,2);
+}
+

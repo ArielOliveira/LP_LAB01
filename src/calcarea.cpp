@@ -36,4 +36,25 @@ void calc_circulo_area(float& raio) {
 	cin >> raio;
 	cout << endl;
 	cout << "A área do círculo é: " << circuloArea(raio) << endl;
+
+}
+
+void calc_piramide_area(float& base, float& altura){
+	cout << "A área da piramide é: "<< area_piramide(base, altura) << endl;
+	cout << endl;
+}
+
+void calc_cubo_area(float& aresta){
+	cout << "A área do cubo é: "<<area_cubo(aresta) << endl;
+	cout << endl;
+}
+
+void calc_paralelepipedo_area(float& aresta1, float& aresta2, float& aresta3){
+	cout << "A área do paralelepipedo é: "<< area_paralelepipedo(aresta1, aresta2, aresta3) << endl;
+	cout << endl;
+}
+
+void calc_esfera_area(float& raio){
+	cout << "A área da esfera é: "<< area_esfera(raio) << endl;
+	cout << endl;
 }
