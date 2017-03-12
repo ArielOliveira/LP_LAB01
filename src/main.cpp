@@ -21,30 +21,53 @@ using std::cout;
 using std::endl;
 using std::streamsize;
 
+
+/** \defgroup Figuras_Planas
+* @fn void triangulo()
+* @brief  Inicializa cálculos para o triângulo
+*/
+///@{
 void triangulo() {
 	float base;
 	calcAreaTriangulo(base);
 	calcPerimetroTriangulo(base);
 }
 
+/**
+* @fn void retangulo()
+* @brief Inicializa cálculos para o retângulo
+*/
 void retangulo() {
 	float base, altura;
 	calcAreaRetangulo(base, altura); 
 	calcPerimetroRetangulo(base, altura);
 }
-
+/**
+* @fn void quadrado()
+* @brief Inicializa cálculos para o quadrado
+*/
 void quadrado() {
 	float base;
 	calcAreaQuadrado(base);
 	calcPerimetroQuadrado(base);
 }
 
+/**
+* @fn void circulo()
+* @brief Inicializa cálculos para o circulo
+*/
 void circulo() {
 	float raio;
 	calcAreaCirculo(raio);
 	calcPerimetroCirculo(raio);
 }
+//@}
 
+/** \defgroup Figuras_Espaciais
+* @{
+* @fn void piramide()
+* @brief  Inicializa cálculos para a piramide
+*/
 void piramide() {
 	float base, altura;
 	calcAreaPiramide(base, altura);
@@ -52,24 +75,37 @@ void piramide() {
 
 }
 
+/**
+* @fn void circulo()
+* @brief Inicializa cálculos para o cubo
+*/
 void cubo() {
 	float aresta;
 	calcAreaCubo(aresta);
 	calcVolumeCubo(aresta);
 }
 
+/**
+* @fn void circulo()
+* @brief Inicializa cálculos para o paralelepípedo
+*/
 void paralelepipedo() {
 	float aresta1, aresta2, aresta3;
 	calcAreaParalelepipedo(aresta1, aresta2, aresta3);
 	calcVolumeParalelepipedo(aresta1, aresta2, aresta3);
 }
 
+/**
+* @fn void circulo()
+* @brief Inicializa cálculos para a esfera
+*/
 void esfera() {
 	float raio;
 	calcAreaEsfera(raio);
 	calcVolumeEsfera(raio);
 	
 }
+///@}
 
 void menu() {
 	cout << "-----------------------------------------" << endl;

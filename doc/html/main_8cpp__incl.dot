@@ -14,7 +14,7 @@ digraph "src/main.cpp"
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="calcvolume.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$calcvolume_8h.html",tooltip="Arquivo cabecalho contendo a definicao das funções que solicitam ao usuário os dados necessários ao c..."];
   Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="volume.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$volume_8h.html",tooltip="Arquivo cabecalho contendo a Implementação das funções que calculam o volume de figuras geométricas e..."];
+  Node7 [label="volume.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$volume_8h.html",tooltip="Arquivo cabecalho contendo a definicao das funções que calculam o volume de figuras geométricas espac..."];
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="calcperimetro.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$calcperimetro_8h_source.html"];
   Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
