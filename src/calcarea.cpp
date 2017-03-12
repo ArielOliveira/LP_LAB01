@@ -11,6 +11,7 @@ void calcAreaTriangulo(float& base) {
 	cin >> base;
 	cout << endl;
 	cout << "A área do triângulo é: " << trianguloArea(base) << endl;
+	cout << endl;
 }
 
 void calcAreaRetangulo(float& base, float& altura) {
@@ -21,6 +22,7 @@ void calcAreaRetangulo(float& base, float& altura) {
 	cin >> altura;
 	cout << endl;
 	cout << "A área do retângulo é: " << retanguloArea(base, altura) << endl;
+	cout << endl;
 }
 
 
@@ -29,6 +31,7 @@ void calcAreaQuadrado(float& base) {
 	cin >> base;
 	cout << endl;
 	cout << "A área do quadrado é: " << quadradoArea(base) << endl;
+	cout << endl;
 }
 
 void calcAreaCirculo(float& raio) {
@@ -36,6 +39,7 @@ void calcAreaCirculo(float& raio) {
 	cin >> raio;
 	cout << endl;
 	cout << "A área do círculo é: " << circuloArea(raio) << endl;
+	cout << endl;
 
 }
 

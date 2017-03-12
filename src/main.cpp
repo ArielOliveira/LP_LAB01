@@ -35,6 +35,7 @@ void piramide() {
 	float base, altura;
 	calcAreaPiramide(base, altura);
 	calcVolumePiramide(base, altura);
+
 }
 
 void cubo() {
@@ -53,6 +54,7 @@ void esfera() {
 	float raio;
 	calcAreaEsfera(raio);
 	calcVolumeEsfera(raio);
+	
 }
 
 void menuEscolha(int escolha) {
@@ -89,6 +91,14 @@ void menuEscolha(int escolha) {
 }
 
 void menu() {
+	char s;
+	cout << "--------------------------------------" << endl;
+	do { 
+		cout << "Digite C para comecar um novo calculo: ";
+		cin >> s;
+	}while (s!='c' && s!='C');
+	if(s=='c' || s=='C' ){system("clear");}
+	cout << "-----------------------------------------" << endl;
 	cout << "Calculadora de Geometria Plana e Espacial" << endl;
 	cout << "(1) Triângulo equilátero" << endl;
 	cout << "(2) Retângulo" << endl;
@@ -109,6 +119,7 @@ int main() {
 	do {
 		menu();
 		cin >> escolha;
+		system("clear");
 		menuEscolha(escolha);	
 	} while (escolha);
 	cout << "Saindo..." << endl;
