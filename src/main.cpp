@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #include "calcarea.h"
 #include "calcvolume.h"
 #include "calcperimetro.h"
@@ -6,6 +7,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
+using std::streamsize;
 
 void triangulo() {
 	float base;
@@ -57,7 +59,32 @@ void esfera() {
 	
 }
 
+void menu() {
+	cout << "-----------------------------------------" << endl;
+	cout << "Calculadora de Geometria Plana e Espacial" << endl;
+	cout << "(1) Triângulo equilátero" << endl;
+	cout << "(2) Retângulo" << endl;
+	cout << "(3) Quadrado" << endl;
+	cout << "(4) Círculo" << endl;
+	cout << "(5) Pirâmide com base quadrangular" << endl;
+	cout << "(6) Cubo" << endl;
+	cout << "(7) Paralelepípedo" << endl;
+	cout << "(8) Esfera" << endl;
+	cout << "(0) Sair" << endl;
+	cout << endl;
+	cout << "Digite a sua opção: ";
+}
+
+void continua(char* s) {
+    cin.clear();
+    std::cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
+	cout << "--------------------------------------" << endl;
+	cout << "Digite C para comecar um novo calculo: ";
+	cin.get(s, 2);
+}
+
 void menuEscolha(int escolha) {
+	char s[2];
 	switch(escolha) {
 		case 1: 
 			triangulo();		
@@ -84,43 +111,27 @@ void menuEscolha(int escolha) {
 			esfera();
 			break;
 		default:
-			if (escolha > 8) cout << "Opção inválida!" << endl;
 			break;
 	}
+	
 	cout << endl;
-}
-
-void menu() {
-	char s;
-	cout << "--------------------------------------" << endl;
+	
 	do { 
-		cout << "Digite C para comecar um novo calculo: ";
-		cin >> s;
-	}while (s!='c' && s!='C');
-	if(s=='c' || s=='C' ){system("clear");}
-	cout << "-----------------------------------------" << endl;
-	cout << "Calculadora de Geometria Plana e Espacial" << endl;
-	cout << "(1) Triângulo equilátero" << endl;
-	cout << "(2) Retângulo" << endl;
-	cout << "(3) Quadrado" << endl;
-	cout << "(4) Círculo" << endl;
-	cout << "(5) Pirâmide com base quadrangular" << endl;
-	cout << "(6) Cubo" << endl;
-	cout << "(7) Paralelepípedo" << endl;
-	cout << "(8) Esfera" << endl;
-	cout << "(0) Sair" << endl;
-	cout << endl;
-	cout << "Digite a sua opção: ";
+		continua(s);				
+	} while (s[0]!='c' && s[0]!='C');
+
 }
 
 int main() {
 	int escolha;
+	system("clear");
 	
 	do {
 		menu();
 		cin >> escolha;
 		system("clear");
-		menuEscolha(escolha);	
+		if (escolha <= 8 && escolha > 0) menuEscolha(escolha);
+		system("clear");
 	} while (escolha);
 	cout << "Saindo..." << endl;
 
