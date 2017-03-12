@@ -1,0 +1,150 @@
+\hypertarget{calcvolume_8h}{}\section{include/calcvolume.h File Reference}
+\label{calcvolume_8h}\index{include/calcvolume.\+h@{include/calcvolume.\+h}}
+
+
+Arquivo cabecalho contendo a definicao das funções que solicitam ao usuário os dados necessários ao cálculo do volume com a figura geométrica e chamam as funções que realizam essa operação.  
+
+
+{\ttfamily \#include \char`\"{}volume.\+h\char`\"{}}\\*
+Include dependency graph for calcvolume.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{calcvolume_8h_aa5acf0ff0f4eb8061d1b86334d2838de}{calc\+Volume\+Piramide} (float \&base, float \&altura)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime o valor do volume da piramide. \end{DoxyCompactList}\item 
+void \hyperlink{calcvolume_8h_af35d29634faa808e187b6635ac6e1fb9}{calc\+Volume\+Cubo} (float \&aresta)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime o valor do volume do cubo. \end{DoxyCompactList}\item 
+void \hyperlink{calcvolume_8h_a994d3c26012b734a4cbabf0ce0c7b75b}{calc\+Volume\+Paralelepipedo} (float \&aresta1, float \&aresta2, float \&aresta3)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime o valor do volume do paralelepipedo. \end{DoxyCompactList}\item 
+void \hyperlink{calcvolume_8h_addef3fdcde1a2b12007610961caffae5}{calc\+Volume\+Esfera} (float \&raio)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime o valor do volume da esfera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Arquivo cabecalho contendo a definicao das funções que solicitam ao usuário os dados necessários ao cálculo do volume com a figura geométrica e chamam as funções que realizam essa operação. 
+
+\begin{DoxyAuthor}{Author}
+Gabriel Barbosa (\href{mailto:gbsbarbosa.gb@gmail.com}{\tt gbsbarbosa.\+gb@gmail.\+com}) 
+
+Ariel Oliveira () 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+12/03/2017 
+\end{DoxySince}
+\begin{DoxyDate}{Date}
+21/03/2017 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{volume_8h}{volume.\+h} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\index{calcvolume.\+h@{calcvolume.\+h}!calc\+Volume\+Cubo@{calc\+Volume\+Cubo}}
+\index{calc\+Volume\+Cubo@{calc\+Volume\+Cubo}!calcvolume.\+h@{calcvolume.\+h}}
+\subsubsection[{\texorpdfstring{calc\+Volume\+Cubo(float \&aresta)}{calcVolumeCubo(float &aresta)}}]{\setlength{\rightskip}{0pt plus 5cm}void calc\+Volume\+Cubo (
+\begin{DoxyParamCaption}
+\item[{float \&}]{aresta}
+\end{DoxyParamCaption}
+)}\hypertarget{calcvolume_8h_af35d29634faa808e187b6635ac6e1fb9}{}\label{calcvolume_8h_af35d29634faa808e187b6635ac6e1fb9}
+
+
+Funcao que imprime o valor do volume do cubo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aresta} & valor da aresta do cubo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sem definicao de retorno
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em aresta} & A\+R\+E\+S\+TA valor da aresta do cubo \\
+\hline
+\end{DoxyParams}
+\index{calcvolume.\+h@{calcvolume.\+h}!calc\+Volume\+Esfera@{calc\+Volume\+Esfera}}
+\index{calc\+Volume\+Esfera@{calc\+Volume\+Esfera}!calcvolume.\+h@{calcvolume.\+h}}
+\subsubsection[{\texorpdfstring{calc\+Volume\+Esfera(float \&raio)}{calcVolumeEsfera(float &raio)}}]{\setlength{\rightskip}{0pt plus 5cm}void calc\+Volume\+Esfera (
+\begin{DoxyParamCaption}
+\item[{float \&}]{raio}
+\end{DoxyParamCaption}
+)}\hypertarget{calcvolume_8h_addef3fdcde1a2b12007610961caffae5}{}\label{calcvolume_8h_addef3fdcde1a2b12007610961caffae5}
+
+
+Funcao que imprime o valor do volume da esfera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raio} & valor do raio do cubo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sem definicao de retorno
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em raio} & R\+A\+IO valor do raio do cubo \\
+\hline
+\end{DoxyParams}
+\index{calcvolume.\+h@{calcvolume.\+h}!calc\+Volume\+Paralelepipedo@{calc\+Volume\+Paralelepipedo}}
+\index{calc\+Volume\+Paralelepipedo@{calc\+Volume\+Paralelepipedo}!calcvolume.\+h@{calcvolume.\+h}}
+\subsubsection[{\texorpdfstring{calc\+Volume\+Paralelepipedo(float \&aresta1, float \&aresta2, float \&aresta3)}{calcVolumeParalelepipedo(float &aresta1, float &aresta2, float &aresta3)}}]{\setlength{\rightskip}{0pt plus 5cm}void calc\+Volume\+Paralelepipedo (
+\begin{DoxyParamCaption}
+\item[{float \&}]{aresta1, }
+\item[{float \&}]{aresta2, }
+\item[{float \&}]{aresta3}
+\end{DoxyParamCaption}
+)}\hypertarget{calcvolume_8h_a994d3c26012b734a4cbabf0ce0c7b75b}{}\label{calcvolume_8h_a994d3c26012b734a4cbabf0ce0c7b75b}
+
+
+Funcao que imprime o valor do volume do paralelepipedo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aresta1} & valor da aresta \#1 do paralelepipedo \\
+\hline
+{\em aresta2} & valor da aresta \#2 do paralelepipedo \\
+\hline
+{\em aresta3} & valor da aresta \#3 do paralelepipedo\\
+\hline
+{\em aresta1} & A\+R\+E\+S\+T\+A1 valor da aresta \#1 do paralelepipedo \\
+\hline
+{\em aresta2} & A\+R\+E\+S\+T\+A2 valor da aresta \#2 do paralelepipedo \\
+\hline
+{\em aresta3} & A\+R\+E\+S\+T\+A3 valor da aresta \#3 do paralelepipedo \\
+\hline
+\end{DoxyParams}
+\index{calcvolume.\+h@{calcvolume.\+h}!calc\+Volume\+Piramide@{calc\+Volume\+Piramide}}
+\index{calc\+Volume\+Piramide@{calc\+Volume\+Piramide}!calcvolume.\+h@{calcvolume.\+h}}
+\subsubsection[{\texorpdfstring{calc\+Volume\+Piramide(float \&base, float \&altura)}{calcVolumePiramide(float &base, float &altura)}}]{\setlength{\rightskip}{0pt plus 5cm}void calc\+Volume\+Piramide (
+\begin{DoxyParamCaption}
+\item[{float \&}]{base, }
+\item[{float \&}]{altura}
+\end{DoxyParamCaption}
+)}\hypertarget{calcvolume_8h_aa5acf0ff0f4eb8061d1b86334d2838de}{}\label{calcvolume_8h_aa5acf0ff0f4eb8061d1b86334d2838de}
+
+
+Funcao que imprime o valor do volume da piramide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & valor da base da piramide \\
+\hline
+{\em altura} & valor da altura da piramide \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sem definicao de retorno
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em base} & B\+A\+SE valor da base da piramide \\
+\hline
+{\em altura} & A\+L\+T\+U\+RA valor da altura da piramide \\
+\hline
+\end{DoxyParams}

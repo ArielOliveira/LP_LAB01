@@ -1,3 +1,15 @@
+/**
+* @file 	main.cpp
+* @brief 	Programa que cálcula área, perímetro e volume
+*			 de figuras geométricas planas e espaciais
+* @details	Figuras geométricas planas possuem apenas área e 
+*			perímetro, assim como as espaciais não possuem perímetro
+* @author	Gabriel Barbosa (gbsbarbosa.gb@gmail.com)
+* @author	Ariel Oliveira (ariel.oliveira01@gmail.com)
+* @since	09/03/2017
+* @date		12/03/2017
+*/
+
 #include <iostream>
 #include <limits>
 #include "calcarea.h"

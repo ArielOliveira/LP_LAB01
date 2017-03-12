@@ -4,6 +4,7 @@ INC_DIR = ./include
 SRC_DIR = ./src
 OBJ_DIR = ./build
 BIN_DIR = ./bin
+DOC_DIR = ./doc
 
 CC = g++
 
@@ -36,6 +37,10 @@ $(OBJ_DIR)/calcperimetro.o: $(SRC_DIR)/calcperimetro.cpp
 
 $(OBJ_DIR)/perimetro.o: $(SRC_DIR)/perimetro.cpp
 	$(CC) -c $(CPPFLAGS) $^ -o $@
+
+doxy:
+	$(RM) $(DOC_DIR)/*
+	doxygen Doxyfile
 
 clean:
 	$(RM) $(BIN_DIR)/*
