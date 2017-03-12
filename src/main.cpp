@@ -9,50 +9,50 @@ using std::endl;
 
 void triangulo() {
 	float base;
-	calc_triangulo_area(base);
-	calc_triangulo_perimetro(base);
+	calcAreaTriangulo(base);
+	calcPerimetroTriangulo(base);
 }
 
 void retangulo() {
 	float base, altura;
-	calc_retangulo_area(base, altura); 
-	calc_retangulo_perimetro(base, altura);
+	calcAreaRetangulo(base, altura); 
+	calcPerimetroRetangulo(base, altura);
 }
 
 void quadrado() {
 	float base;
-	calc_quadrado_area(base);
-	calc_quadrado_perimetro(base);
+	calcAreaQuadrado(base);
+	calcPerimetroQuadrado(base);
 }
 
 void circulo() {
 	float raio;
-	calc_circulo_area(raio);
-	calc_circulo_perimetro(raio);
+	calcAreaCirculo(raio);
+	calcPerimetroCirculo(raio);
 }
 
 void piramide() {
 	float base, altura;
-	calc_piramide_area(base, altura);
-	calc_piramide_volume(base, altura);
+	calcAreaPiramide(base, altura);
+	calcVolumePiramide(base, altura);
 }
 
 void cubo() {
 	float aresta;
-	calc_cubo_area(aresta);
-	calc_cubo_volume(aresta);
+	calcAreaCubo(aresta);
+	calcVolumeCubo(aresta);
 }
 
 void paralelepipedo() {
 	float aresta1, aresta2, aresta3;
-	calc_paralelepipedo_area(aresta1, aresta2, aresta3);
-	calc_paralelepipedo_volume(aresta1, aresta2, aresta3);
+	calcAreaParalelepipedo(aresta1, aresta2, aresta3);
+	calcVolumeParalelepipedo(aresta1, aresta2, aresta3);
 }
 
 void esfera() {
 	float raio;
-	calc_esfera_area(raio);
-	calc_esfera_volume(raio);
+	calcAreaEsfera(raio);
+	calcVolumeEsfera(raio);
 }
 
 void menuEscolha(int escolha) {
@@ -85,6 +85,7 @@ void menuEscolha(int escolha) {
 			if (escolha > 8) cout << "Opção inválida!" << endl;
 			break;
 	}
+	cout << endl;
 }
 
 void menu() {

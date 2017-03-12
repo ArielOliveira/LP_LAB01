@@ -3,12 +3,12 @@
 
 #include "perimetro.h"
 
-void calc_triangulo_perimetro(float& base);
+void calcPerimetroTriangulo(float& base);
 
-void calc_retangulo_perimetro(float& base, float& altura);
+void calcPerimetroRetangulo(float& base, float& altura);
 
-void calc_quadrado_perimetro(float& base);
+void calcPerimetroQuadrado(float& base);
 
-void calc_circulo_perimetro(float& raio);
+void calcPerimetroCirculo(float& raio);
 
 #endif

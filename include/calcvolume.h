@@ -3,13 +3,13 @@
 
 #include "volume.h"
 
-void calc_piramide_volume(float& base, float& altura);
+void calcVolumePiramide(float& base, float& altura);
 
-void calc_cubo_volume(float& aresta);
+void calcVolumeCubo(float& aresta);
 
-void calc_paralelepipedo_volume(float& aresta1, float& aresta2, float& aresta3);
+void calcVolumeParalelepipedo(float& aresta1, float& aresta2, float& aresta3);
 
-void calc_esfera_volume(float& raio);
+void calcVolumeEsfera(float& raio);
 
 
 #endif 
