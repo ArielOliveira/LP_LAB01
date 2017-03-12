@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/calcperimetro.h"
+#include "calcperimetro.h"
 
 using std::cin;
 using std::cout;

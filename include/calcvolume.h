@@ -1,11 +1,7 @@
 #ifndef CALVOLUME_H
 #define CALVOLUME_H
 
-#include <iostream>
 #include "volume.h"
-using std::cin;
-using std::cout;
-using std::endl;
 
 void calc_piramide_volume(float& base, float& altura);
 

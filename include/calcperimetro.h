@@ -1,6 +1,7 @@
 #ifndef CALCPERIMETRO_H
 #define CALCPERIMETRO_H
-#include "../include/perimetro.h"
+
+#include "perimetro.h"
 
 void calc_triangulo_perimetro(float& base);
 

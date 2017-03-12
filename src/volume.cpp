@@ -1,4 +1,7 @@
+#include <cmath>
 #include "volume.h"
+
+#define PI  3.1415
 
 float volume_piramide(float &base, float &altura){
 	return (pow(base,2) * altura) * 1/3;

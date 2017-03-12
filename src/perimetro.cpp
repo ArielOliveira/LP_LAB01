@@ -1,4 +1,4 @@
-#include "../include/perimetro.h"
+#include "perimetro.h"
 
 #define PI 3.1415
 

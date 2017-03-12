@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../include/calcarea.h"
-#include "../include/calcvolume.h"
-#include "../include/calcperimetro.h"
+#include "calcarea.h"
+#include "calcvolume.h"
+#include "calcperimetro.h"
 
 using std::cin;
 using std::cout;
@@ -33,34 +33,30 @@ void circulo() {
 
 void piramide() {
 	float base, altura;
-	calc_piramide_volume(base, altura);
 	calc_piramide_area(base, altura);
-	
+	calc_piramide_volume(base, altura);
 }
 
 void cubo() {
 	float aresta;
-	calc_cubo_volume(aresta);
 	calc_cubo_area(aresta);
-	
+	calc_cubo_volume(aresta);
 }
 
 void paralelepipedo() {
 	float aresta1, aresta2, aresta3;
-	calc_paralelepipedo_volume(aresta1, aresta2, aresta3);
 	calc_paralelepipedo_area(aresta1, aresta2, aresta3);
-	
+	calc_paralelepipedo_volume(aresta1, aresta2, aresta3);
 }
 
 void esfera() {
 	float raio;
-	calc_esfera_volume(raio);
 	calc_esfera_area(raio);
-	
+	calc_esfera_volume(raio);
 }
 
-void menuChoice(int choice) {
-	switch(choice) {
+void menuEscolha(int escolha) {
+	switch(escolha) {
 		case 1: 
 			triangulo();		
 		 	break;
@@ -86,34 +82,34 @@ void menuChoice(int choice) {
 			esfera();
 			break;
 		default:
-			if (choice > 8) cout << "Opção inválida!" << endl;
+			if (escolha > 8) cout << "Opção inválida!" << endl;
 			break;
 	}
 }
 
 void menu() {
 	cout << "Calculadora de Geometria Plana e Espacial" << endl;
-	cout << "(1) Triangulo equilatero" << endl;
-	cout << "(2) Retangulo" << endl;
+	cout << "(1) Triângulo equilátero" << endl;
+	cout << "(2) Retângulo" << endl;
 	cout << "(3) Quadrado" << endl;
-	cout << "(4) Circulo" << endl;
-	cout << "(5) Piramide com base quadrangular" << endl;
+	cout << "(4) Círculo" << endl;
+	cout << "(5) Pirâmide com base quadrangular" << endl;
 	cout << "(6) Cubo" << endl;
-	cout << "(7) Paralelepipedo" << endl;
+	cout << "(7) Paralelepípedo" << endl;
 	cout << "(8) Esfera" << endl;
 	cout << "(0) Sair" << endl;
 	cout << endl;
-	cout << "Digite a sua opcao: ";
+	cout << "Digite a sua opção: ";
 }
 
 int main() {
-	int choice;
+	int escolha;
 	
 	do {
 		menu();
-		cin >> choice;
-		menuChoice(choice);	
-	} while (choice);
+		cin >> escolha;
+		menuEscolha(escolha);	
+	} while (escolha);
 	cout << "Saindo..." << endl;
 
 	return 0;

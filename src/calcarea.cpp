@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/calcarea.h"
+#include "calcarea.h"
 
 using std::cin;
 using std::endl;
@@ -40,21 +40,39 @@ void calc_circulo_area(float& raio) {
 }
 
 void calc_piramide_area(float& base, float& altura){
-	cout << "A área da piramide é: "<< area_piramide(base, altura) << endl;
+	cout << "Digite o tamanho da aresta da base da pirâmide: ";
+	cin >> base;
+	cout <<	"Digite o tamanho da altura da pirâmide: ";
+	cin >> altura;
+	cout << endl;
+	cout << "A área da pirâmide é: "<< area_piramide(base, altura) << endl;
 	cout << endl;
 }
 
-void calc_cubo_area(float& aresta){
+void calc_cubo_area(float& aresta) {
+	cout << "Digite o tamanho da aresta do cubo: ";
+	cin >> aresta;
+	cout << endl;
 	cout << "A área do cubo é: "<<area_cubo(aresta) << endl;
 	cout << endl;
 }
 
-void calc_paralelepipedo_area(float& aresta1, float& aresta2, float& aresta3){
-	cout << "A área do paralelepipedo é: "<< area_paralelepipedo(aresta1, aresta2, aresta3) << endl;
+void calc_paralelepipedo_area(float& aresta1, float& aresta2, float& aresta3) {
+	cout << "Digite o tamanho da aresta 1: ";
+	cin >> aresta1;
+	cout << "Digite o tamanho da aresta 2: ";
+	cin >> aresta2;
+	cout << "Digite o tamanho da aresta 3: ";
+	cin >> aresta3;
+	cout << endl;
+	cout << "A área do paralelepípedo é: "<< area_paralelepipedo(aresta1, aresta2, aresta3) << endl;
 	cout << endl;
 }
 
-void calc_esfera_area(float& raio){
+void calc_esfera_area(float& raio) {
+	cout << "Digite o tamanho do raio: ";
+	cin >> raio;
+	cout << endl;
 	cout << "A área da esfera é: "<< area_esfera(raio) << endl;
 	cout << endl;
 }
