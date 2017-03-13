@@ -14,8 +14,8 @@ OBJS = ./build/main.o ./build/area.o ./build/calcarea.o ./build/calcvolume.o ./b
 
 CPPFLAGS = -Wall -pedantic -ansi -std=c++11 -I. -I$(INC_DIR)
 
-$(PROG): $(OBJS)
-	$(CC) $^ $(CPPFLAGS) -o $@
+$(PROG): $(OBJ_DIR) $(OBJS)
+	$(CC) $(OBJS) $(CPPFLAGS) -o $@
 
 $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp 
 	$(CC) -c $(CPPFLAGS) $^ -o $@
@@ -37,6 +37,9 @@ $(OBJ_DIR)/calcperimetro.o: $(SRC_DIR)/calcperimetro.cpp
 
 $(OBJ_DIR)/perimetro.o: $(SRC_DIR)/perimetro.cpp
 	$(CC) -c $(CPPFLAGS) $^ -o $@
+
+$(OBJ_DIR):
+	mkdir $@
 
 doxy:
 	$(RM) $(DOC_DIR)/*
