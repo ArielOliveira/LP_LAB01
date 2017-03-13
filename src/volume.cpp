@@ -16,19 +16,22 @@
 #define PI  3.1415
 
 
-/** 
- * @brief	Funcao que calcula o valor do volume da piramide
- * @param 	base BASE valor da base da piramide
- * @param	altura ALTURA valor da altura da piramide
- * @return	Volume da piramide
+/**\defgroup Calc_Volume 
+ * @brief 	Funções que calculam o volume das figuras
+ * @{
+ * @fn 		float volumePiramide(float& base, float& altura)
+ * @brief	Função que calcula o valor do volume da pirâmide
+ * @param 	base BASE valor da base da pirâmide
+ * @param	altura ALTURA valor da altura da pirâmide
+ * @return	Volume da pirâmide
  */
-float volumePiramide(float& base, float& altura){
+float volumePiramide(float& base, float& altura) {
 	return (pow(base,2) * altura) * 1/3;
 }
 
 
 /** 
- * @brief 	Funcao que calcula o valor do volume do cubo
+ * @brief 	Função que calcula o valor do volume do cubo
  * @param 	aresta ARESTA valor da aresta do cubo
  * @return 	Volume do cubo
  */
@@ -38,11 +41,11 @@ float volumeCubo(float& aresta){
 
 
 /** 
- * @brief 	Funcao que calcula o valor do volume do paralelepipedo
- * @param 	aresta1 ARESTA1 valor da aresta #1 do paralelepipedo
- * @param 	aresta2 ARESTA2 valor da aresta #2 do paralelepipedo
- * @param 	aresta3 ARESTA3 valor da aresta #3 do paralelepipedo
- * @return 	Valor do volume do paralelepipedo
+ * @brief 	Função que calcula o valor do volume do paralelepípedo
+ * @param 	aresta1 ARESTA1 valor da aresta #1 do paralelepípedo
+ * @param 	aresta2 ARESTA2 valor da aresta #2 do paralelepípedo
+ * @param 	aresta3 ARESTA3 valor da aresta #3 do paralelepípedo
+ * @return 	Valor do volume do paralelepípedo
  */
 float volumeParalelepipedo(float& aresta1, float& aresta2, float& aresta3){
 	return aresta1 * aresta2 * aresta3;
@@ -50,10 +53,11 @@ float volumeParalelepipedo(float& aresta1, float& aresta2, float& aresta3){
 
 
 /** 
- * @brief 	Funcao que calcula o valor do volume da esfera
+ * @brief 	Função que calcula o valor do volume da esfera
  * @param 	raio RAIO valor do raio do cubo
  * @return 	Volume da esfera
  */
 float volumeEsfera(float& raio){
 	return PI * pow(raio,3) * 4/3;
 }
+///@}

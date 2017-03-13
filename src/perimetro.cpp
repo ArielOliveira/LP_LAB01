@@ -15,9 +15,12 @@
 #define PI 3.1415
 
 
-/**
- * @brief	Função que calcula o valor do perimetro do triângulo
- * @param	base BASE valor da base do triangulo
+/**\defgroup Calc_Perimetro
+ * @brief 	Funções que calculam o perímetro das figuras
+ * @{
+ * @fn 		float trianguloPerimetro(float& base)
+ * @brief	Função que calcula o valor do perímetro do triângulo
+ * @param	base BASE valor da base do triângulo
  */
 float trianguloPerimetro(float& base) {
 	return base * 3;
@@ -25,7 +28,7 @@ float trianguloPerimetro(float& base) {
 
 
 /** 
- * @brief	Função que calcula o valor do perimetro do retângulo
+ * @brief	Função que calcula o valor do perímetro do retângulo
  * @param	base BASE valor da base do retângulo
  * @param 	altura ALTURA valor da altura do retângulo
  */
@@ -45,10 +48,11 @@ float quadradoPerimetro(float& base) {
 
 
 /** 
- * @brief	Função que calcula o valor do perimetro do círculo
+ * @brief	Função que calcula o valor do perímetro do círculo
  * @param	raio RAIO valor da base do círculo
  */
 
 float circuloPerimetro(float& raio) {
 	return 2 * PI * raio;
 }
+///@}

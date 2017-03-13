@@ -129,9 +129,18 @@ void continua(char* s) {
     std::cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
 	cout << "--------------------------------------" << endl;
 	cout << "Digite C para comecar um novo calculo: ";
-	cin.get(s, 2);
+	cin.getline(s, 2);
 }
 
+int lerTeclado(char* s) {
+	cin.getline(s, 2);
+	if (!std::cin) {
+		cin.clear(); 
+    	std::cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
+    	return 1;
+	}
+	return 0;
+}
 
 /**
 * @brief	Função que chama outra para efetuar o calculo
@@ -178,17 +187,22 @@ void menuEscolha(int escolha) {
 }
 
 int main() {
-	int escolha;
+	char escolhaC[2];
+	int escolha = 0;
 	system("clear");
-	
 	do {
-		menu();
-		cin >> escolha;
-		system("clear");
+		int erro = 1;
+		while(erro) {
+			menu();
+			erro = lerTeclado(escolhaC);
+			system("clear");
+		}
+		escolha = escolhaC[0]-48;
 		if (escolha <= 8 && escolha > 0) menuEscolha(escolha);
 		system("clear");
 	} while (escolha);
 	cout << "Saindo..." << endl;
+	cout << escolha << endl;	
 
 	return 0;
 }

@@ -16,7 +16,9 @@
 #define pitagoras(a,b) (pow(a,2) - pow(b,2))
 
 /**\defgroup Figuras_Planas_CalcArea
+ * @brief 	Funções que calculam o valor da área das figuras planas
  * @{
+ * @fn 		float trianguloArea(float& base)
  * @brief 	Função que calcula o valor da área do triângulo
  * @param 	base BASE valor da base da triângulo
  * @return 	área do triângulo
@@ -55,13 +57,15 @@ float circuloArea(float& raio) {
 ///@}
 
 /**\defgroup Figuras_Espaciais_CalcArea
+ * @brief 	Funções que calculam o valor da área das figuras espaciais
  * @{
+ * @fn 		float areaPiramide(float& base, float& altura)
  * @brief 	Função que calcula o valor da área da pirâmide
  * @param 	base BASE valor da base da pirâmide
  * @param	altura ALTURA valor da altura da pirâmide
  * @return 	área da pirâmide
  */
-float areaPiramide(float& base, float& altura){
+float areaPiramide(float& base, float& altura) {
 	return (trianguloArea(base) * 4) + (base * base);
 }
 

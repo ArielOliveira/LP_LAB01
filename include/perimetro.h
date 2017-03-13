@@ -14,30 +14,30 @@
 
 
 /**
- * @brief	Função que calcula o valor do perimetro do triangulo
- * @param	base BASE valor da base do triangulo
+ * @brief	Função que calcula o valor do perímetro do triângulo
+ * @param	base BASE valor da base do triângulo
  */
 float trianguloPerimetro(float& base);
 
 
 /** 
- * @brief	Funcao que calcula o valor do perimetro do retangulo
- * @param	base BASE valor da base do retangulo
- * @param 	altura ALTURA valor da altura do retangulo
+ * @brief	Função que calcula o valor do perímetro do retângulo
+ * @param	base BASE valor da base do retângulo
+ * @param 	altura ALTURA valor da altura do retângulo
  */
 float retanguloPerimetro(float& base, float& altura);
 
 
 /** 
- * @brief	Funcao que calcula o valor do perimetro do quadrado
+ * @brief	Função que calcula o valor do perímetro do quadrado
  * @param	base BASE valor da base do quadrado
  */
 float quadradoPerimetro(float& base);
 
 
 /** 
- * @brief	Funcao que calcula o valor do perimetro do circulo
- * @param	raio RAIO valor da base do circulo
+ * @brief	Função que calcula o valor do perímetro do círculo
+ * @param	raio RAIO valor da base do círculo
  */
 float circuloPerimetro(float& raio);
 

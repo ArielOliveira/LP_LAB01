@@ -18,9 +18,13 @@ using std::endl;
 using std::cout;
 
 
-/** 
- * @brief Função que imprime o valor da área do triângulo
- * @param base BASE valor da base do triângulo
+/**\defgroup Figuras_Planas_Imprime_Resultado
+ * @brief 	Funções que imprimem o resultado dos cálculos
+ *			da área das figuras geométricas planas
+ * @{
+ * @fn 		void calcAreaTriangulo(float& base)
+ * @brief 	Função que imprime o valor da área do triângulo
+ * @param 	base BASE valor da base do triângulo
  */
 void calcAreaTriangulo(float& base) {
 	cout << "Digite a base para o triângulo: ";
@@ -31,9 +35,9 @@ void calcAreaTriangulo(float& base) {
 }
 
 /** 
- * @brief Função que imprime o valor da área do retângulo
- * @param base BASE valor da base do retângulo
- * @param altura ALTURA valor da altura do retângulo
+ * @brief 	Função que imprime o valor da área do retângulo
+ * @param 	base BASE valor da base do retângulo
+ * @param 	altura ALTURA valor da altura do retângulo
  */
 void calcAreaRetangulo(float& base, float& altura) {
 	cout << "Digite a base para o retângulo: ";
@@ -47,8 +51,8 @@ void calcAreaRetangulo(float& base, float& altura) {
 }
 
 /** 
- * @brief Função que imprime o valor da área do quadrado
- * @param base BASE valor da base do quadrado
+ * @brief 	Função que imprime o valor da área do quadrado
+ * @param 	base BASE valor da base do quadrado
  */
 void calcAreaQuadrado(float& base) {
 	cout << "Digite a base para o quadrado: ";
@@ -59,8 +63,8 @@ void calcAreaQuadrado(float& base) {
 }
 
 /** 
- * @brief Função que imprime o valor da área do círculo
- * @param base BASE valor da base do círculo
+ * @brief 	Função que imprime o valor da área do círculo
+ * @param 	base BASE valor da base do círculo
  */
 void calcAreaCirculo(float& raio) {
 	cout << "Digite o raio do círculo: ";
@@ -71,12 +75,18 @@ void calcAreaCirculo(float& raio) {
 
 }
 
-/** 
- * @brief Função que imprime o valor da área da pirâmide
- * @param base BASE valor da base da pirâmide
- * @param altura ALTURA valor da altura da pirâmide
+///@}
+
+/**\defgroup Figuras_Espaciais_Imprime_Resultado
+ * @brief 	Funções que imprimem o resultado dos cálculos
+ *			da área das figuras geométricas espaciais
+ * @{
+ * @fn 		void calcAreaPiramide(float& base, float& altura)
+ * @brief 	Função que imprime o valor da área da pirâmide
+ * @param 	base BASE valor da base da pirâmide
+ * @param 	altura ALTURA valor da altura da pirâmide
  */
-void calcAreaPiramide(float& base, float& altura){
+void calcAreaPiramide(float& base, float& altura) {
 	cout << "Digite o tamanho da aresta da base da pirâmide: ";
 	cin >> base;
 	cout <<	"Digite o tamanho da altura da pirâmide: ";
@@ -127,3 +137,4 @@ void calcAreaEsfera(float& raio) {
 	cout << "A área da esfera é: "<< areaEsfera(raio) << endl;
 	cout << endl;
 }
+///@}
