@@ -16,8 +16,8 @@ var searchData=
   ['calcvolumeesfera',['calcVolumeEsfera',['../calcvolume_8cpp.html#addef3fdcde1a2b12007610961caffae5',1,'calcVolumeEsfera(float &amp;raio):&#160;calcvolume.cpp'],['../calcvolume_8h.html#addef3fdcde1a2b12007610961caffae5',1,'calcVolumeEsfera(float &amp;raio):&#160;calcvolume.cpp']]],
   ['calcvolumeparalelepipedo',['calcVolumeParalelepipedo',['../calcvolume_8cpp.html#a994d3c26012b734a4cbabf0ce0c7b75b',1,'calcVolumeParalelepipedo(float &amp;aresta1, float &amp;aresta2, float &amp;aresta3):&#160;calcvolume.cpp'],['../calcvolume_8h.html#a994d3c26012b734a4cbabf0ce0c7b75b',1,'calcVolumeParalelepipedo(float &amp;aresta1, float &amp;aresta2, float &amp;aresta3):&#160;calcvolume.cpp']]],
   ['calcvolumepiramide',['calcVolumePiramide',['../calcvolume_8cpp.html#aa5acf0ff0f4eb8061d1b86334d2838de',1,'calcVolumePiramide(float &amp;base, float &amp;altura):&#160;calcvolume.cpp'],['../calcvolume_8h.html#aa5acf0ff0f4eb8061d1b86334d2838de',1,'calcVolumePiramide(float &amp;base, float &amp;altura):&#160;calcvolume.cpp']]],
-  ['circulo',['circulo',['../group__Figuras__Planas.html#ga28482bc381ce414df86e4fdb9e3e6da5',1,'main.cpp']]],
-  ['circuloarea',['circuloArea',['../area_8cpp.html#ac50529a5e8458336df0f0e2329e49833',1,'circuloArea(float &amp;raio):&#160;area.cpp'],['../area_8h.html#ac50529a5e8458336df0f0e2329e49833',1,'circuloArea(float &amp;raio):&#160;area.cpp']]],
+  ['circulo',['circulo',['../group__Figuras__Planas__Inicializa_xC3_xA7_xC3_xA3o.html#ga28482bc381ce414df86e4fdb9e3e6da5',1,'main.cpp']]],
+  ['circuloarea',['circuloArea',['../group__Figuras__Planas__CalcArea.html#gac50529a5e8458336df0f0e2329e49833',1,'circuloArea(float &amp;raio):&#160;area.cpp'],['../group__Figuras__Planas__CalcArea.html#gac50529a5e8458336df0f0e2329e49833',1,'circuloArea(float &amp;raio):&#160;area.cpp']]],
   ['circuloperimetro',['circuloPerimetro',['../perimetro_8cpp.html#abf774992f344a535b77e941cabb7e2f0',1,'circuloPerimetro(float &amp;raio):&#160;perimetro.cpp'],['../perimetro_8h.html#abf774992f344a535b77e941cabb7e2f0',1,'circuloPerimetro(float &amp;raio):&#160;perimetro.cpp']]],
-  ['cubo',['cubo',['../group__Figuras__Espaciais.html#gaf0b7d023166ce6902197d4082a66ad03',1,'main.cpp']]]
+  ['cubo',['cubo',['../group__Figuras__Espaciais__Inicializa_xC3_xA7_xC3_xA3o.html#gaf0b7d023166ce6902197d4082a66ad03',1,'main.cpp']]]
 ];
