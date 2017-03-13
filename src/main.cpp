@@ -117,14 +117,27 @@ void menu() {
 	cout << "Digite a sua opção: ";
 }
 
+
+/**
+* @brief	Função usada para limpar o buffer e para começar um novo cálculo
+* 			quando outro é terminado ou quando uma entrada inválida
+*			é inserida
+* @param	s S char usado para verificação de continuação
+*/
 void continua(char* s) {
-    cin.clear();
+    cin.clear(); 
     std::cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
 	cout << "--------------------------------------" << endl;
 	cout << "Digite C para comecar um novo calculo: ";
 	cin.get(s, 2);
 }
 
+
+/**
+* @brief	Função que chama outra para efetuar o calculo
+*			de acordo com a entrada do usuario
+* @param	escolha ESCOLHA figura geometrica escolhida pelo usuario
+*/
 void menuEscolha(int escolha) {
 	char s[2];
 	switch(escolha) {
@@ -159,8 +172,8 @@ void menuEscolha(int escolha) {
 	cout << endl;
 	
 	do { 
-		continua(s);				
-	} while (s[0]!='c' && s[0]!='C');
+		continua(s); // chama função que limpa o buffer			
+	} while (s[0]!='c' && s[0]!='C'); // pede uma entrada correta (c ou C) enquanto for digitada uma errada
 
 }
 
