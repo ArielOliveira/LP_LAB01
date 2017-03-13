@@ -1,3 +1,15 @@
+/**
+ * @file	calcarea.cpp
+ * @brief	Arquivo cabeçalho contendo a implementação das funções que solicitam
+ *			ao usuário os dados necessários para o cálculo da área com a figura
+ *			geométrica e chamam as funções que realizam essa operação
+ * @author	Gabriel Barbosa (gbsbarbosa.gb@gmail.com)
+ * @author	Ariel Oliveira (ariel.oliveira01@gmail.com)
+ * @since	09/03/2017
+ * @date	12/03/2017
+ * @sa 		calcarea.h
+ */
+
 #include <iostream>
 #include "calcarea.h"
 
@@ -6,6 +18,10 @@ using std::endl;
 using std::cout;
 
 
+/** 
+ * @brief Função que imprime o valor da área do triângulo
+ * @param base BASE valor da base do triângulo
+ */
 void calcAreaTriangulo(float& base) {
 	cout << "Digite a base para o triângulo: ";
 	cin >> base;
@@ -14,6 +30,11 @@ void calcAreaTriangulo(float& base) {
 	cout << endl;
 }
 
+/** 
+ * @brief Função que imprime o valor da área do retângulo
+ * @param base BASE valor da base do retângulo
+ * @param altura ALTURA valor da altura do retângulo
+ */
 void calcAreaRetangulo(float& base, float& altura) {
 	cout << "Digite a base para o retângulo: ";
 	cin >> base;
@@ -25,7 +46,10 @@ void calcAreaRetangulo(float& base, float& altura) {
 	cout << endl;
 }
 
-
+/** 
+ * @brief Função que imprime o valor da área do quadrado
+ * @param base BASE valor da base do quadrado
+ */
 void calcAreaQuadrado(float& base) {
 	cout << "Digite a base para o quadrado: ";
 	cin >> base;
@@ -34,6 +58,10 @@ void calcAreaQuadrado(float& base) {
 	cout << endl;
 }
 
+/** 
+ * @brief Função que imprime o valor da área do círculo
+ * @param base BASE valor da base do círculo
+ */
 void calcAreaCirculo(float& raio) {
 	cout << "Digite o raio do círculo: ";
 	cin >> raio;
@@ -43,6 +71,11 @@ void calcAreaCirculo(float& raio) {
 
 }
 
+/** 
+ * @brief Função que imprime o valor da área da pirâmide
+ * @param base BASE valor da base da pirâmide
+ * @param altura ALTURA valor da altura da pirâmide
+ */
 void calcAreaPiramide(float& base, float& altura){
 	cout << "Digite o tamanho da aresta da base da pirâmide: ";
 	cin >> base;
@@ -53,6 +86,10 @@ void calcAreaPiramide(float& base, float& altura){
 	cout << endl;
 }
 
+/** 
+ * @brief Função que imprime o valor da área do círculo
+ * @param base BASE valor da base do círculo
+ */
 void calcAreaCubo(float& aresta) {
 	cout << "Digite o tamanho da aresta do cubo: ";
 	cin >> aresta;
@@ -61,6 +98,12 @@ void calcAreaCubo(float& aresta) {
 	cout << endl;
 }
 
+/** 
+ * @brief Função que imprime o valor da área do paralelepípedo
+ * @param aresta1 ARESTA1 valor da aresta #1 do paralelepípedo
+ * @param aresta2 ARESTA2 valor da aresta #2 do paralelepípedo
+ * @param aresta3 ARESTA3 valor da aresta #3 do paralelepípedo
+ */
 void calcAreaParalelepipedo(float& aresta1, float& aresta2, float& aresta3) {
 	cout << "Digite o tamanho da aresta 1: ";
 	cin >> aresta1;
@@ -73,6 +116,10 @@ void calcAreaParalelepipedo(float& aresta1, float& aresta2, float& aresta3) {
 	cout << endl;
 }
 
+/** 
+ * @brief Função que imprime o valor da área do círculo
+ * @param raio RAIO valor da base do círculo
+ */
 void calcAreaEsfera(float& raio) {
 	cout << "Digite o tamanho do raio: ";
 	cin >> raio;

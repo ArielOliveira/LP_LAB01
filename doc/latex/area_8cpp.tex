@@ -1,0 +1,227 @@
+\hypertarget{area_8cpp}{}\section{src/area.cpp File Reference}
+\label{area_8cpp}\index{src/area.\+cpp@{src/area.\+cpp}}
+
+
+Arquivo cabeçalho contendo a definição das funções que calculam a área das figuras geométricas.  
+
+
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include \char`\"{}area.\+h\char`\"{}}\\*
+Include dependency graph for area.\+cpp\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries PI}~3.\+1415\hypertarget{area_8cpp_a598a3330b3c21701223ee0ca14316eca}{}\label{area_8cpp_a598a3330b3c21701223ee0ca14316eca}
+
+\item 
+\#define {\bfseries pitagoras}(a,  b)~(pow(a,2) -\/ pow(b,2))\hypertarget{area_8cpp_a4544bdcd1e3ebe0263d82aad9efa4901}{}\label{area_8cpp_a4544bdcd1e3ebe0263d82aad9efa4901}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{area_8cpp_ad3dd4559c961d21265a1fe46e7d5c3cc}{triangulo\+Area} (float \&base)
+\begin{DoxyCompactList}\small\item\em Função que calcula o valor da área do triângulo. \end{DoxyCompactList}\item 
+float \hyperlink{area_8cpp_aadec7ea7b857fb93862af9da30f4b896}{retangulo\+Area} (float \&base, float \&altura)
+\begin{DoxyCompactList}\small\item\em Função que calcula o valor da área do retângulo. \end{DoxyCompactList}\item 
+float \hyperlink{area_8cpp_ac85a6a6234680349b5b8329d4333567e}{quadrado\+Area} (float \&lado)
+\begin{DoxyCompactList}\small\item\em Função que calcula o valor da área do quadrado. \end{DoxyCompactList}\item 
+float \hyperlink{area_8cpp_ac50529a5e8458336df0f0e2329e49833}{circulo\+Area} (float \&raio)
+\begin{DoxyCompactList}\small\item\em Função que calcula o valor da área do círculo. \end{DoxyCompactList}\item 
+float \hyperlink{area_8cpp_a10226ad45447d70353626a01897d1b06}{area\+Piramide} (float \&base, float \&altura)
+\begin{DoxyCompactList}\small\item\em Função que calcula o valor da área da pirâmide. \end{DoxyCompactList}\item 
+float \hyperlink{area_8cpp_ab519a0d997044a93085abaaaf6270ab5}{area\+Cubo} (float \&aresta)
+\begin{DoxyCompactList}\small\item\em Função que calcula o valor da área do cubo. \end{DoxyCompactList}\item 
+float \hyperlink{area_8cpp_aff7dfecfa742b07c8e8e243325d95117}{area\+Paralelepipedo} (float \&aresta1, float \&aresta2, float \&aresta3)
+\begin{DoxyCompactList}\small\item\em Função que calcula o valor da área do paralelepípedo. \end{DoxyCompactList}\item 
+float \hyperlink{area_8cpp_a2d0b18f7e5391dd6a8bff93bb679171a}{area\+Esfera} (float \&raio)
+\begin{DoxyCompactList}\small\item\em Função que calcula o valor da área da esfera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Arquivo cabeçalho contendo a definição das funções que calculam a área das figuras geométricas. 
+
+\begin{DoxyAuthor}{Author}
+Gabriel Barbosa (\href{mailto:gbsbarbosa.gb@gmail.com}{\tt gbsbarbosa.\+gb@gmail.\+com}) 
+
+Ariel Oliveira (\href{mailto:ariel.oliveira01@gmail.com}{\tt ariel.\+oliveira01@gmail.\+com}) 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+09/03/2017 
+\end{DoxySince}
+\begin{DoxyDate}{Date}
+12/03/2017 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{area_8h}{area.\+h} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\index{area.\+cpp@{area.\+cpp}!area\+Cubo@{area\+Cubo}}
+\index{area\+Cubo@{area\+Cubo}!area.\+cpp@{area.\+cpp}}
+\subsubsection[{\texorpdfstring{area\+Cubo(float \&aresta)}{areaCubo(float &aresta)}}]{\setlength{\rightskip}{0pt plus 5cm}float area\+Cubo (
+\begin{DoxyParamCaption}
+\item[{float \&}]{aresta}
+\end{DoxyParamCaption}
+)}\hypertarget{area_8cpp_ab519a0d997044a93085abaaaf6270ab5}{}\label{area_8cpp_ab519a0d997044a93085abaaaf6270ab5}
+
+
+Função que calcula o valor da área do cubo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aresta} & A\+R\+E\+S\+TA valor da aresta do cubo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+área do triângulo 
+\end{DoxyReturn}
+\index{area.\+cpp@{area.\+cpp}!area\+Esfera@{area\+Esfera}}
+\index{area\+Esfera@{area\+Esfera}!area.\+cpp@{area.\+cpp}}
+\subsubsection[{\texorpdfstring{area\+Esfera(float \&raio)}{areaEsfera(float &raio)}}]{\setlength{\rightskip}{0pt plus 5cm}float area\+Esfera (
+\begin{DoxyParamCaption}
+\item[{float \&}]{raio}
+\end{DoxyParamCaption}
+)}\hypertarget{area_8cpp_a2d0b18f7e5391dd6a8bff93bb679171a}{}\label{area_8cpp_a2d0b18f7e5391dd6a8bff93bb679171a}
+
+
+Função que calcula o valor da área da esfera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raio} & R\+A\+IO valor do raio da esfera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+área da esfera 
+\end{DoxyReturn}
+\index{area.\+cpp@{area.\+cpp}!area\+Paralelepipedo@{area\+Paralelepipedo}}
+\index{area\+Paralelepipedo@{area\+Paralelepipedo}!area.\+cpp@{area.\+cpp}}
+\subsubsection[{\texorpdfstring{area\+Paralelepipedo(float \&aresta1, float \&aresta2, float \&aresta3)}{areaParalelepipedo(float &aresta1, float &aresta2, float &aresta3)}}]{\setlength{\rightskip}{0pt plus 5cm}float area\+Paralelepipedo (
+\begin{DoxyParamCaption}
+\item[{float \&}]{aresta1, }
+\item[{float \&}]{aresta2, }
+\item[{float \&}]{aresta3}
+\end{DoxyParamCaption}
+)}\hypertarget{area_8cpp_aff7dfecfa742b07c8e8e243325d95117}{}\label{area_8cpp_aff7dfecfa742b07c8e8e243325d95117}
+
+
+Função que calcula o valor da área do paralelepípedo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aresta1} & A\+R\+E\+S\+T\+A1 valor da aresta \#1 do paralelepípedo \\
+\hline
+{\em aresta2} & A\+R\+E\+S\+T\+A2 valor da aresta \#2 do paralelepípedo \\
+\hline
+{\em aresta3} & A\+R\+E\+S\+T\+A3 valor da aresta \#3 do paralelepípedo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+área do paralelepípedo 
+\end{DoxyReturn}
+\index{area.\+cpp@{area.\+cpp}!area\+Piramide@{area\+Piramide}}
+\index{area\+Piramide@{area\+Piramide}!area.\+cpp@{area.\+cpp}}
+\subsubsection[{\texorpdfstring{area\+Piramide(float \&base, float \&altura)}{areaPiramide(float &base, float &altura)}}]{\setlength{\rightskip}{0pt plus 5cm}float area\+Piramide (
+\begin{DoxyParamCaption}
+\item[{float \&}]{base, }
+\item[{float \&}]{altura}
+\end{DoxyParamCaption}
+)}\hypertarget{area_8cpp_a10226ad45447d70353626a01897d1b06}{}\label{area_8cpp_a10226ad45447d70353626a01897d1b06}
+
+
+Função que calcula o valor da área da pirâmide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & B\+A\+SE valor da base da pirâmide \\
+\hline
+{\em altura} & A\+L\+T\+U\+RA valor da altura da pirâmide \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+área da pirâmide 
+\end{DoxyReturn}
+\index{area.\+cpp@{area.\+cpp}!circulo\+Area@{circulo\+Area}}
+\index{circulo\+Area@{circulo\+Area}!area.\+cpp@{area.\+cpp}}
+\subsubsection[{\texorpdfstring{circulo\+Area(float \&raio)}{circuloArea(float &raio)}}]{\setlength{\rightskip}{0pt plus 5cm}float circulo\+Area (
+\begin{DoxyParamCaption}
+\item[{float \&}]{raio}
+\end{DoxyParamCaption}
+)}\hypertarget{area_8cpp_ac50529a5e8458336df0f0e2329e49833}{}\label{area_8cpp_ac50529a5e8458336df0f0e2329e49833}
+
+
+Função que calcula o valor da área do círculo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raio} & R\+A\+IO valor do raio do círculo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+área do círculo 
+\end{DoxyReturn}
+\index{area.\+cpp@{area.\+cpp}!quadrado\+Area@{quadrado\+Area}}
+\index{quadrado\+Area@{quadrado\+Area}!area.\+cpp@{area.\+cpp}}
+\subsubsection[{\texorpdfstring{quadrado\+Area(float \&lado)}{quadradoArea(float &lado)}}]{\setlength{\rightskip}{0pt plus 5cm}float quadrado\+Area (
+\begin{DoxyParamCaption}
+\item[{float \&}]{lado}
+\end{DoxyParamCaption}
+)}\hypertarget{area_8cpp_ac85a6a6234680349b5b8329d4333567e}{}\label{area_8cpp_ac85a6a6234680349b5b8329d4333567e}
+
+
+Função que calcula o valor da área do quadrado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lado} & L\+A\+DO valor dos lados do quadrado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+área do quadrado 
+\end{DoxyReturn}
+\index{area.\+cpp@{area.\+cpp}!retangulo\+Area@{retangulo\+Area}}
+\index{retangulo\+Area@{retangulo\+Area}!area.\+cpp@{area.\+cpp}}
+\subsubsection[{\texorpdfstring{retangulo\+Area(float \&base, float \&altura)}{retanguloArea(float &base, float &altura)}}]{\setlength{\rightskip}{0pt plus 5cm}float retangulo\+Area (
+\begin{DoxyParamCaption}
+\item[{float \&}]{base, }
+\item[{float \&}]{altura}
+\end{DoxyParamCaption}
+)}\hypertarget{area_8cpp_aadec7ea7b857fb93862af9da30f4b896}{}\label{area_8cpp_aadec7ea7b857fb93862af9da30f4b896}
+
+
+Função que calcula o valor da área do retângulo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & B\+A\+SE valor da base do retângulo \\
+\hline
+{\em altura} & A\+L\+T\+U\+RA valor da altura do retângulo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+área do retângulo 
+\end{DoxyReturn}
+\index{area.\+cpp@{area.\+cpp}!triangulo\+Area@{triangulo\+Area}}
+\index{triangulo\+Area@{triangulo\+Area}!area.\+cpp@{area.\+cpp}}
+\subsubsection[{\texorpdfstring{triangulo\+Area(float \&base)}{trianguloArea(float &base)}}]{\setlength{\rightskip}{0pt plus 5cm}float triangulo\+Area (
+\begin{DoxyParamCaption}
+\item[{float \&}]{base}
+\end{DoxyParamCaption}
+)}\hypertarget{area_8cpp_ad3dd4559c961d21265a1fe46e7d5c3cc}{}\label{area_8cpp_ad3dd4559c961d21265a1fe46e7d5c3cc}
+
+
+Função que calcula o valor da área do triângulo. 
+
+Função que calcula o valor da área do triangulo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & B\+A\+SE valor da base da triângulo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+área do triângulo 
+\end{DoxyReturn}

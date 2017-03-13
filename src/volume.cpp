@@ -17,7 +17,6 @@
 
 
 /** 
- * @fn 		float volumePiramide(float& base, float& altura)
  * @brief	Funcao que calcula o valor do volume da piramide
  * @param 	base BASE valor da base da piramide
  * @param	altura ALTURA valor da altura da piramide
@@ -29,7 +28,6 @@ float volumePiramide(float& base, float& altura){
 
 
 /** 
- * @fn 		float volumeCubo(float& aresta)
  * @brief 	Funcao que calcula o valor do volume do cubo
  * @param 	aresta ARESTA valor da aresta do cubo
  * @return 	Volume do cubo
@@ -40,7 +38,6 @@ float volumeCubo(float& aresta){
 
 
 /** 
- * @fn 		float volumeParalelepipedo(float& aresta1, float& aresta2, float& aresta3)
  * @brief 	Funcao que calcula o valor do volume do paralelepipedo
  * @param 	aresta1 ARESTA1 valor da aresta #1 do paralelepipedo
  * @param 	aresta2 ARESTA2 valor da aresta #2 do paralelepipedo
@@ -53,7 +50,6 @@ float volumeParalelepipedo(float& aresta1, float& aresta2, float& aresta3){
 
 
 /** 
- * @fn 		volumeEsfera(float& raio)
  * @brief 	Funcao que calcula o valor do volume da esfera
  * @param 	raio RAIO valor do raio do cubo
  * @return 	Volume da esfera

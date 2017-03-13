@@ -3,7 +3,7 @@
 * @brief 	Programa que cálcula área, perímetro e volume
 *			 de figuras geométricas planas e espaciais
 * @details	Figuras geométricas planas possuem apenas área e 
-*			perímetro, assim como as espaciais não possuem perímetro
+*			perímetro. As espaciais não possuem perímetro
 * @author	Gabriel Barbosa (gbsbarbosa.gb@gmail.com)
 * @author	Ariel Oliveira (ariel.oliveira01@gmail.com)
 * @since	09/03/2017
@@ -23,10 +23,10 @@ using std::streamsize;
 
 
 /** \defgroup Figuras_Planas
-* @fn void triangulo()
-* @brief  Inicializa cálculos para o triângulo
+* @{
+* @fn 	    void triangulo()
+* @brief  	Inicializa cálculos para o triângulo
 */
-///@{
 void triangulo() {
 	float base;
 	calcAreaTriangulo(base);
@@ -34,8 +34,7 @@ void triangulo() {
 }
 
 /**
-* @fn void retangulo()
-* @brief Inicializa cálculos para o retângulo
+* @brief    Inicializa cálculos para o retângulo
 */
 void retangulo() {
 	float base, altura;
@@ -43,8 +42,7 @@ void retangulo() {
 	calcPerimetroRetangulo(base, altura);
 }
 /**
-* @fn void quadrado()
-* @brief Inicializa cálculos para o quadrado
+* @brief 	Inicializa cálculos para o quadrado
 */
 void quadrado() {
 	float base;
@@ -53,8 +51,7 @@ void quadrado() {
 }
 
 /**
-* @fn void circulo()
-* @brief Inicializa cálculos para o circulo
+* @brief 	Inicializa cálculos para o circulo
 */
 void circulo() {
 	float raio;
@@ -65,8 +62,8 @@ void circulo() {
 
 /** \defgroup Figuras_Espaciais
 * @{
-* @fn void piramide()
-* @brief  Inicializa cálculos para a piramide
+* @fn 	 	void piramide()
+* @brief 	Inicializa cálculos para a piramide
 */
 void piramide() {
 	float base, altura;
@@ -76,8 +73,7 @@ void piramide() {
 }
 
 /**
-* @fn void circulo()
-* @brief Inicializa cálculos para o cubo
+* @brief 	Inicializa cálculos para o cubo
 */
 void cubo() {
 	float aresta;
@@ -86,8 +82,7 @@ void cubo() {
 }
 
 /**
-* @fn void circulo()
-* @brief Inicializa cálculos para o paralelepípedo
+* @brief 	Inicializa cálculos para o paralelepípedo
 */
 void paralelepipedo() {
 	float aresta1, aresta2, aresta3;
@@ -96,8 +91,7 @@ void paralelepipedo() {
 }
 
 /**
-* @fn void circulo()
-* @brief Inicializa cálculos para a esfera
+* @brief	Inicializa cálculos para a esfera
 */
 void esfera() {
 	float raio;

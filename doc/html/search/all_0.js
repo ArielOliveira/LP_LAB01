@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['calcvolume_2ecpp',['calcvolume.cpp',['../calcvolume_8cpp.html',1,'']]],
-  ['calcvolume_2eh',['calcvolume.h',['../calcvolume_8h.html',1,'']]],
-  ['calcvolumecubo',['calcVolumeCubo',['../calcvolume_8cpp.html#af35d29634faa808e187b6635ac6e1fb9',1,'calcVolumeCubo(float &amp;aresta):&#160;calcvolume.cpp'],['../calcvolume_8h.html#af35d29634faa808e187b6635ac6e1fb9',1,'calcVolumeCubo(float &amp;aresta):&#160;calcvolume.cpp']]],
-  ['calcvolumeesfera',['calcVolumeEsfera',['../calcvolume_8cpp.html#addef3fdcde1a2b12007610961caffae5',1,'calcVolumeEsfera(float &amp;raio):&#160;calcvolume.cpp'],['../calcvolume_8h.html#addef3fdcde1a2b12007610961caffae5',1,'calcVolumeEsfera(float &amp;raio):&#160;calcvolume.cpp']]],
-  ['calcvolumeparalelepipedo',['calcVolumeParalelepipedo',['../calcvolume_8cpp.html#a994d3c26012b734a4cbabf0ce0c7b75b',1,'calcVolumeParalelepipedo(float &amp;aresta1, float &amp;aresta2, float &amp;aresta3):&#160;calcvolume.cpp'],['../calcvolume_8h.html#a994d3c26012b734a4cbabf0ce0c7b75b',1,'calcVolumeParalelepipedo(float &amp;aresta1, float &amp;aresta2, float &amp;aresta3):&#160;calcvolume.cpp']]],
-  ['calcvolumepiramide',['calcVolumePiramide',['../calcvolume_8cpp.html#aa5acf0ff0f4eb8061d1b86334d2838de',1,'calcVolumePiramide(float &amp;base, float &amp;altura):&#160;calcvolume.cpp'],['../calcvolume_8h.html#aa5acf0ff0f4eb8061d1b86334d2838de',1,'calcVolumePiramide(float &amp;base, float &amp;altura):&#160;calcvolume.cpp']]],
-  ['circulo',['circulo',['../group__Figuras__Espaciais.html#ga28482bc381ce414df86e4fdb9e3e6da5',1,'main.cpp']]]
+  ['area_2ecpp',['area.cpp',['../area_8cpp.html',1,'']]],
+  ['area_2eh',['area.h',['../area_8h.html',1,'']]],
+  ['areacubo',['areaCubo',['../area_8cpp.html#ab519a0d997044a93085abaaaf6270ab5',1,'areaCubo(float &amp;aresta):&#160;area.cpp'],['../area_8h.html#ab519a0d997044a93085abaaaf6270ab5',1,'areaCubo(float &amp;aresta):&#160;area.cpp']]],
+  ['areaesfera',['areaEsfera',['../area_8cpp.html#a2d0b18f7e5391dd6a8bff93bb679171a',1,'areaEsfera(float &amp;raio):&#160;area.cpp'],['../area_8h.html#a2d0b18f7e5391dd6a8bff93bb679171a',1,'areaEsfera(float &amp;raio):&#160;area.cpp']]],
+  ['areaparalelepipedo',['areaParalelepipedo',['../area_8cpp.html#aff7dfecfa742b07c8e8e243325d95117',1,'areaParalelepipedo(float &amp;aresta1, float &amp;aresta2, float &amp;aresta3):&#160;area.cpp'],['../area_8h.html#aff7dfecfa742b07c8e8e243325d95117',1,'areaParalelepipedo(float &amp;aresta1, float &amp;aresta2, float &amp;aresta3):&#160;area.cpp']]],
+  ['areapiramide',['areaPiramide',['../area_8cpp.html#a10226ad45447d70353626a01897d1b06',1,'areaPiramide(float &amp;base, float &amp;altura):&#160;area.cpp'],['../area_8h.html#a10226ad45447d70353626a01897d1b06',1,'areaPiramide(float &amp;base, float &amp;altura):&#160;area.cpp']]]
 ];

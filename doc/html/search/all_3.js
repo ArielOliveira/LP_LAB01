@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['piramide',['piramide',['../group__Figuras__Espaciais.html#gae3945922f925bc3d1fd95c5dc4ff6987',1,'main.cpp']]]
+  ['figuras_5fespaciais',['Figuras_Espaciais',['../group__Figuras__Espaciais.html',1,'']]],
+  ['figuras_5fplanas',['Figuras_Planas',['../group__Figuras__Planas.html',1,'']]]
 ];
