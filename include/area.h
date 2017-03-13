@@ -1,6 +1,6 @@
 /**
  * @file	area.h
- * @brief	Arquivo cabecalho contendo a definicao das funções 
+ * @brief	Arquivo cabeçalho contendo a definicao das funções 
  * 			que calculam a área das figuras geométricas
  * @author	Gabriel Barbosa (gbsbarbosa.gb@gmail.com)
  * @author	Ariel Oliveira (ariel.oliveira01@gmail.com)
