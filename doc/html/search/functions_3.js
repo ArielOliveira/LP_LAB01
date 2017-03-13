@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['paralelepipedo',['paralelepipedo',['../group__Figuras__Espaciais__Inicializa_xC3_xA7_xC3_xA3o.html#gaf5c3350f35c2d9ae97c0243b7aeac39e',1,'main.cpp']]],
-  ['piramide',['piramide',['../group__Figuras__Espaciais__Inicializa_xC3_xA7_xC3_xA3o.html#gae3945922f925bc3d1fd95c5dc4ff6987',1,'main.cpp']]]
+  ['lerteclado',['lerTeclado',['../main_8cpp.html#a0d6e0362f83bdaafc6ac5f8e29aee0dd',1,'main.cpp']]],
+  ['limparbuffer',['limparBuffer',['../main_8cpp.html#aa4babdda3b35e146a545f567fcd13fb3',1,'main.cpp']]]
 ];

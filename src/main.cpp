@@ -23,6 +23,8 @@ using std::streamsize;
 
 
 /**\defgroup Figuras_Planas_Inicialização
+* @brief 	Grupo de funções que fazem as chamadas
+*			para solicitação dos cálculos
 * @{
 * @fn 	    void triangulo()
 * @brief  	Inicializa cálculos para o triângulo
@@ -119,24 +121,21 @@ void menu() {
 
 
 /**
-* @brief	Função usada para limpar o buffer e para começar um novo cálculo
-* 			quando outro é terminado ou quando uma entrada inválida
-*			é inserida
-* @param	s S char usado para verificação de continuação
+* @brief	Função usada para limpar o buffer da cin
 */
-void continua(char* s) {
-    cin.clear(); 
+void limparBuffer() {
+	cin.clear(); 
     std::cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
-	cout << "--------------------------------------" << endl;
-	cout << "Digite C para comecar um novo calculo: ";
-	cin.getline(s, 2);
 }
 
+/**
+* @brief	Função para ler entrada do usuário com checagens de segurança
+* @param	s S ponteiro de char que armazena o valor da escolha do usuário
+*/
 int lerTeclado(char* s) {
 	cin.getline(s, 2);
 	if (!std::cin) {
-		cin.clear(); 
-    	std::cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
+		limparBuffer();
     	return 1;
 	}
 	return 0;
@@ -180,8 +179,11 @@ void menuEscolha(int escolha) {
 	
 	cout << endl;
 	
-	do { 
-		continua(s); // chama função que limpa o buffer			
+	do {
+		cout << "--------------------------------------" << endl;
+		cout << "Digite C para comecar um novo calculo: "; 
+		limparBuffer();
+		lerTeclado(s); // chama função que limpa o buffer		
 	} while (s[0]!='c' && s[0]!='C'); // pede uma entrada correta (c ou C) enquanto for digitada uma errada
 
 }
@@ -202,7 +204,6 @@ int main() {
 		system("clear");
 	} while (escolha);
 	cout << "Saindo..." << endl;
-	cout << escolha << endl;	
 
 	return 0;
 }
