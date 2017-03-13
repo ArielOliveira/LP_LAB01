@@ -22,7 +22,7 @@ using std::endl;
 using std::streamsize;
 
 
-/** \defgroup Figuras_Planas
+/** \defgroup Figuras_Planas_Inicialização
 * @{
 * @fn 	    void triangulo()
 * @brief  	Inicializa cálculos para o triângulo
@@ -60,7 +60,7 @@ void circulo() {
 }
 //@}
 
-/** \defgroup Figuras_Espaciais
+/** \defgroup Figuras_Espaciais_Inicialização
 * @{
 * @fn 	 	void piramide()
 * @brief 	Inicializa cálculos para a piramide
