@@ -18,9 +18,9 @@ using std::endl;
 using std::cout;
 
 
-/**\defgroup Figuras_Planas_Imprime_Resultado
- * @brief 	Funções que imprimem o resultado dos cálculos
- *			da área das figuras geométricas planas
+/**\defgroup Figuras_Planas_Imprime_Area
+ * @brief   Resultados dos cálculos das 
+ *			áreas das figuras planas
  * @{
  * @fn 		void calcAreaTriangulo(float& base)
  * @brief 	Função que imprime o valor da área do triângulo
@@ -77,9 +77,9 @@ void calcAreaCirculo(float& raio) {
 
 ///@}
 
-/**\defgroup Figuras_Espaciais_Imprime_Resultado
- * @brief 	Funções que imprimem o resultado dos cálculos
- *			da área das figuras geométricas espaciais
+/**\defgroup Figuras_Espaciais_Imprime_Area
+ * @brief 	Resultados dos cálculos das 
+ *			áreas das figuras espaciais
  * @{
  * @fn 		void calcAreaPiramide(float& base, float& altura)
  * @brief 	Função que imprime o valor da área da pirâmide

@@ -18,7 +18,10 @@ using std::cout;
 using std::endl;
 
 
-/** 
+/**\defgroup Figuras_Planas_Imprime_Perimetro
+ * @brief	Resultados dos cálculos dos perímetros
+ * @{
+ * @fn 		void calcPerimetroTriangulo(float& base)
  * @brief	Funcao que imprime o valor do perimetro do triangulo
  * @param	base BASE valor da base do triangulo
  */
@@ -53,3 +56,4 @@ void calcPerimetroQuadrado(float& base)	 {
 void calcPerimetroCirculo(float& raio) {
 	cout << "O perímetro do círculo é: " << circuloPerimetro(raio) << endl;
 }
+///@}

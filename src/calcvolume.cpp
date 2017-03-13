@@ -17,13 +17,14 @@ using std::cout;
 using std::endl;
 
 
-/** 
- * @brief 	Função que imprime o valor do volume da piramide
- * @param 	base BASE valor da base da piramide
- * @param 	altura ALTURA valor da altura da piramide
- * @brief 	Funcao que imprime o valor do volume da piramide
- * @param 	base BASE valor da base da piramide
- * @param 	altura ALTURA valor da altura da piramide
+/**\defgroup Figuras_Espaciais_Imprime_Volume
+ * @brief 	Resultados dos cálculos dos volumes
+ *			das figuras espaciais
+ * @{
+ * @fn 		void calcVolumePiramide(float& base, float& altura)
+ * @brief 	Função que imprime o valor do volume da pirâmide
+ * @param 	base BASE valor da base da pirâmide
+ * @param 	altura ALTURA valor da altura da pirâmide
  */
 void calcVolumePiramide(float& base, float& altura) {
 	cout <<"O volume da Pirâmide é: "<< volumePiramide(base, altura) << endl;
@@ -57,3 +58,4 @@ void calcVolumeParalelepipedo(float& aresta1, float& aresta2, float& aresta3) {
 void calcVolumeEsfera(float& raio) {
 	cout << "O volume da Esfera é: " << volumeEsfera(raio) << endl;
  }
+ ///@}

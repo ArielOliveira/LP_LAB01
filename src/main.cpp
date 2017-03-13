@@ -23,8 +23,8 @@ using std::streamsize;
 
 
 /**\defgroup Figuras_Planas_Inicialização
-* @brief 	Grupo de funções que fazem as chamadas
-*			para solicitação dos cálculos
+* @brief 	Solicitação dos cálculos
+*			das figuras planas
 * @{
 * @fn 	    void triangulo()
 * @brief  	Inicializa cálculos para o triângulo
@@ -53,7 +53,7 @@ void quadrado() {
 }
 
 /**
-* @brief 	Inicializa cálculos para o circulo
+* @brief 	Inicializa cálculos para o círculo
 */
 void circulo() {
 	float raio;
@@ -63,9 +63,11 @@ void circulo() {
 //@}
 
 /**\defgroup Figuras_Espaciais_Inicialização
+* @brief 	Solicitação dos cálculos 
+*			das figuras espaciais
 * @{
 * @fn 	 	void piramide()
-* @brief 	Inicializa cálculos para a piramide
+* @brief 	Inicializa cálculos para a pirâmide
 */
 void piramide() {
 	float base, altura;
@@ -183,7 +185,7 @@ void menuEscolha(int escolha) {
 		cout << "--------------------------------------" << endl;
 		cout << "Digite C para comecar um novo calculo: "; 
 		limparBuffer();
-		lerTeclado(s); // chama função que limpa o buffer		
+		lerTeclado(s);
 	} while (s[0]!='c' && s[0]!='C'); // pede uma entrada correta (c ou C) enquanto for digitada uma errada
 
 }

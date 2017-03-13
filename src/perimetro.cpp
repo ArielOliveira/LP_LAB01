@@ -16,7 +16,7 @@
 
 
 /**\defgroup Calc_Perimetro
- * @brief 	Funções que calculam o perímetro das figuras
+ * @brief 	Cálculos dos perímetros
  * @{
  * @fn 		float trianguloPerimetro(float& base)
  * @brief	Função que calcula o valor do perímetro do triângulo

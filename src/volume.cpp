@@ -17,7 +17,7 @@
 
 
 /**\defgroup Calc_Volume 
- * @brief 	Funções que calculam o volume das figuras
+ * @brief 	Cálculos dos volumes
  * @{
  * @fn 		float volumePiramide(float& base, float& altura)
  * @brief	Função que calcula o valor do volume da pirâmide

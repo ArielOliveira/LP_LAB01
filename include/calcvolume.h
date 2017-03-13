@@ -17,9 +17,9 @@
 
 
 /** 
- * @brief 	Função que imprime o valor do volume da piramide
- * @param 	base BASE valor da base da piramide
- * @param 	altura ALTURA valor da altura da piramide
+ * @brief 	Função que imprime o valor do volume da pirâmide
+ * @param 	base BASE valor da base da pirâmide
+ * @param 	altura ALTURA valor da altura da pirâmide
  */
 void calcVolumePiramide(float& base, float& altura);
 
