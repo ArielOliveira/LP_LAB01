@@ -3,9 +3,9 @@
  * @brief	Arquivo cabecalho contendo a definicao das funções 
  * 			que calculam o volume de figuras geométricas espaciais
  * @author	Gabriel Barbosa (gbsbarbosa.gb@gmail.com)
- * @author	Ariel Oliveira ()
- * @since	12/03/2017
- * @date	21/03/2017
+ * @author	Ariel Oliveira (ariel.oliveira01@gmail.com)
+ * @since	09/03/2017
+ * @date	12/03/2017
  */
 
 
