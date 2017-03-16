@@ -14,6 +14,8 @@ OBJS = ./build/main.o ./build/area.o ./build/calcarea.o ./build/calcvolume.o ./b
 
 CPPFLAGS = -Wall -pedantic -ansi -std=c++11 -I. -I$(INC_DIR)
 
+.PHONY: doxy clean go
+	
 $(PROG): $(OBJ_DIR) $(OBJS)
 	$(CC) $(OBJS) $(CPPFLAGS) -o $@
 
@@ -48,4 +50,7 @@ doxy:
 clean:
 	$(RM) $(BIN_DIR)/*
 	$(RM) $(OBJ_DIR)/*
+
+go: 
+	$(PROG)
 
