@@ -24,7 +24,8 @@
  * @return 	área do triângulo
  */
 float trianguloArea(float& base) {
-	return  (base * sqrt(pitagoras(base / 2, base) - (pitagoras(base / 2, base) * 2))) / 2;
+	return  (base * sqrt(pitagoras(base / 2, base)
+	 - (pitagoras(base / 2, base) * 2))) / 2;
 } 	
 
 /**

@@ -26,7 +26,9 @@ using std::streamsize;
 * @brief 	Solicitação dos cálculos
 *			das figuras planas
 * @{
-* @fn 	    void triangulo()
+*/
+
+/**
 * @brief  	Inicializa cálculos para o triângulo
 */
 void triangulo() {
@@ -106,6 +108,7 @@ void esfera() {
 ///@}
 
 void menu() {
+	system("clear");
 	cout << "-----------------------------------------" << endl;
 	cout << "Calculadora de Geometria Plana e Espacial" << endl;
 	cout << "(1) Triângulo equilátero" << endl;
@@ -203,7 +206,6 @@ int main() {
 		}
 		escolha = escolhaC[0]-48;
 		if (escolha <= 8 && escolha > 0) menuEscolha(escolha);
-		system("clear");
 	} while (escolha);
 	cout << "Saindo..." << endl;
 
