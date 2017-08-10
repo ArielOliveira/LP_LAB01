@@ -88,7 +88,9 @@ float areaCubo(float& aresta){
  * @return 	área do paralelepípedo
  */
 float areaParalelepipedo(float& aresta1,float& aresta2,float& aresta3){
-	return (2 * aresta1 * aresta2) + (2 * aresta1 * aresta3) + (2 * aresta2 * aresta3);
+	return (2 * aresta1 * aresta2) + 
+	 		(2 * aresta1 * aresta3) + 
+	 		 (2 * aresta2 * aresta3);
 }
 
 /**
