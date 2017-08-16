@@ -1,22 +1,9 @@
-/**
- * @file	calcarea.cpp
- * @brief	Arquivo cabeçalho contendo a implementação das funções que solicitam
- *			ao usuário os dados necessários para o cálculo da área com a figura
- *			geométrica e chamam as funções que realizam essa operação
- * @author	Gabriel Barbosa (gbsbarbosa.gb@gmail.com)
- * @author	Ariel Oliveira (ariel.oliveira01@gmail.com)
- * @since	09/03/2017
- * @date	12/03/2017
- * @sa 		calcarea.h
- */
-
 #include <iostream>
-#include "calcarea.h"
-
 using std::cin;
 using std::endl;
 using std::cout;
 
+#include "calcula.h"
 
 /**\defgroup Figuras_Planas_Imprime_Area
  * @brief   Resultados dos cálculos das 
@@ -138,3 +125,86 @@ void calcAreaEsfera(float& raio) {
 	cout << endl;
 }
 ///@}
+
+/**\defgroup Figuras_Planas_Imprime_Perimetro
+ * @brief	Resultados dos cálculos dos perímetros
+ * @{
+ * @fn 		void calcPerimetroTriangulo(float& base)
+ * @brief	Funcao que imprime o valor do perimetro do triangulo
+ * @param	base BASE valor da base do triangulo
+ */
+void calcPerimetroTriangulo(float& base) {
+	cout << "O perímetro do triângulo é: " << trianguloPerimetro(base) << endl;
+}
+
+
+/** 
+ * @brief	Funcao que imprime o valor do perimetro do retangulo
+ * @param	base BASE valor da base do retangulo
+ * @param	altura ALTURA valor da altura do retangulo
+ */
+void calcPerimetroRetangulo(float& base, float& altura) {
+	cout << "O perímetro do retângulo é: " << retanguloPerimetro(base, altura) << endl;
+}
+
+
+/** 
+ * @brief	Funcao que imprime o valor do perimetro do quadrado
+ * @param	base BASE valor da base do quadrado
+ */
+void calcPerimetroQuadrado(float& base)	 {
+	cout << "O perímetro do quadrado é: " << quadradoPerimetro(base) << endl;
+}
+
+
+/** 
+ * @brief	Funcao que imprime o valor do perimetro do circulo
+ * @param	base BASE valor da base do circulo
+ */
+void calcPerimetroCirculo(float& raio) {
+	cout << "O perímetro do círculo é: " << circuloPerimetro(raio) << endl;
+}
+///@}
+
+/**\defgroup Figuras_Espaciais_Imprime_Volume
+ * @brief 	Resultados dos cálculos dos volumes
+ *			das figuras espaciais
+ * @{
+ * @fn 		void calcVolumePiramide(float& base, float& altura)
+ * @brief 	Função que imprime o valor do volume da pirâmide
+ * @param 	base BASE valor da base da pirâmide
+ * @param 	altura ALTURA valor da altura da pirâmide
+ */
+void calcVolumePiramide(float& base, float& altura) {
+	cout <<"O volume da Pirâmide é: "<< volumePiramide(base, altura) << endl;
+}
+
+
+/** 
+ * @brief 	Função que imprime o valor do volume do cubo
+ * @param 	aresta ARESTA valor da aresta do cubo
+ */
+void calcVolumeCubo(float& aresta) {
+	cout << "O volume do Cubo é: "<< volumeCubo(aresta) << endl;
+}
+
+
+/** 
+ * @brief 	Função que imprime o valor do volume do paralelepípedo
+ * @param 	aresta1 ARESTA1 valor da aresta #1 do paralelepípedo
+ * @param 	aresta2 ARESTA2 valor da aresta #2 do paralelepípedo
+ * @param 	aresta3 ARESTA3 valor da aresta #3 do paralelepípedo
+ */
+void calcVolumeParalelepipedo(float& aresta1, float& aresta2, float& aresta3) {
+	cout << "O volume do Paralelepípedo é: "<< volumeParalelepipedo(aresta1, aresta2, aresta3) << endl;
+}
+
+
+/** 
+ * @brief 	Função que imprime o valor do volume da esfera
+ * @param 	raio RAIO valor do raio do cubo
+ */
+void calcVolumeEsfera(float& raio) {
+	cout << "O volume da Esfera é: " << volumeEsfera(raio) << endl;
+ }
+ ///@}

@@ -2,10 +2,9 @@
  * @file	perimetro.h
  * @brief	Arquivo cabeçalho contendo a definição das funções 
  * 			que calculam o perímetro de figuras geométricas planas
- * @author	Gabriel Barbosa (gbsbarbosa.gb@gmail.com)
  * @author	Ariel Oliveira (ariel.oliveira01@gmail.com)
- * @since	12/03/2017
- * @date	21/03/2017
+ * @since	10/08/2017
+ * @date	15/08/2017
  */
 
 
