@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lerteclado',['lerTeclado',['../main_8cpp.html#a0d6e0362f83bdaafc6ac5f8e29aee0dd',1,'main.cpp']]],
-  ['limparbuffer',['limparBuffer',['../main_8cpp.html#aa4babdda3b35e146a545f567fcd13fb3',1,'main.cpp']]]
+  ['maiorprimo',['maiorPrimo',['../primalidade_8cpp.html#ac5bda7b7f8ca82ed9f53d0cb71bef1c1',1,'maiorPrimo(int n, int k):&#160;primalidade.cpp'],['../primalidade_8h.html#ac5bda7b7f8ca82ed9f53d0cb71bef1c1',1,'maiorPrimo(int n, int k):&#160;primalidade.cpp']]]
 ];

@@ -1,5 +1,5 @@
 questao_1 = ./bin/geometrica
-questao_2 = ./bin/questao_2
+questao_2 = ./bin/anterior
 questao_3 = ./bin/questao_3
 
 INC_DIR = ./include
@@ -13,12 +13,16 @@ CC = g++
 RM = rm -rf
 
 OBJS_Q1 = ./build/questao_1/main.o ./build/questao_1/area.o ./build/questao_1/perimetro.o ./build/questao_1/volume.o ./build/questao_1/calcula.o
-#./build/questao_1/calcarea.o ./build/questao_1/calcvolume.o ./build/questao_1/calcperimetro.o
 OBJS_Q2 = ./build/questao_2/main.o ./build/questao_2/fatorial.o ./build/questao_2/primalidade.o
 
 CPPFLAGS = -Wall -pedantic -ansi -std=c++11
 
-.PHONY: doxy clean go questao_1
+.PHONY: clean debug dir doxy questao_1 questao_2 questao_3
+
+all: questao_1 questao_2 questao_3
+
+debug: CPPFLAGS += -g -O0
+debug: questao_1 questao_2 questao_3
 
 questao_1: $(questao_1)
 
@@ -56,8 +60,13 @@ $(OBJ_DIR)/questao_2/fatorial.o: $(SRC_DIR)/questao_2/fatorial.cpp $(INC_DIR)/qu
 $(OBJ_DIR)/questao_2/primalidade.o: $(SRC_DIR)/questao_2/primalidade.cpp $(INC_DIR)/questao_2/primalidade.h
 	$(CC) -c $(CPPFLAGS) $< -o $@ 
 
-$(OBJ_DIR):
-	mkdir $@
+questao_3: $(questao_3)
+
+$(questao_3): $(OBJ_DIR)/questao_3/main.o
+	$(CC) $^ $(CPPFLAGS) -o $@
+
+$(OBJ_DIR)/questao_3/main.o: $(SRC_DIR)/questao_3/main.cpp
+	$(CC) -c $(CPPFLAGS) $< -o $@
 
 doxy:
 	$(RM) $(DOC_DIR)/*

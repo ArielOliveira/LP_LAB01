@@ -1,6 +1,4 @@
-<map id="include/perimetro.h" name="include/perimetro.h">
-<area shape="rect" id="node2" href="$perimetro_8cpp.html" title="Arquivo cabeçalho contendo a definição das funções que calculam o perímetro de figuras geométricas pl..." alt="" coords="5,80,128,107"/>
-<area shape="rect" id="node3" href="$calcperimetro_8h.html" title="Arquivo cabecalho contendo a definicao das funções que solicitam ao usuário os dados necessários ao c..." alt="" coords="153,80,309,107"/>
-<area shape="rect" id="node4" href="$calcperimetro_8cpp.html" title="Arquivo de corpo contendo a implementacao das funções que solicitam ao usuário os dados necessários a..." alt="" coords="84,155,231,181"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title="Programa que cálcula área, perímetro e volume de figuras geométricas planas e espaciais. " alt="" coords="255,155,353,181"/>
+<map id="include/questao_1/perimetro.h" name="include/questao_1/perimetro.h">
+<area shape="rect" id="node2" href="$perimetro_8cpp.html" title="Arquivo contendo contendo a implementação das funções que calculam o perímetro de figuras geométricas..." alt="" coords="5,80,192,107"/>
+<area shape="rect" id="node3" href="$calcula_8h.html" title="Arquivo cabeçalho contendo a definição das funções que solicitam ao usuário os dados necessários para..." alt="" coords="217,80,399,107"/>
 </map>

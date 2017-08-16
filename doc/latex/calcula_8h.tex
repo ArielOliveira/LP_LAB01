@@ -1,0 +1,70 @@
+\hypertarget{calcula_8h}{}\section{Referência do Arquivo include/questao\+\_\+1/calcula.h}
+\label{calcula_8h}\index{include/questao\+\_\+1/calcula.\+h@{include/questao\+\_\+1/calcula.\+h}}
+
+
+Arquivo cabeçalho contendo a definição das funções que solicitam ao usuário os dados necessários para o cálculo da área, perímetroe volume com a figura geométrica e chamam as funções que realizam essa operação.  
+
+
+{\ttfamily \#include \char`\"{}area.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}perimetro.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}volume.\+h\char`\"{}}\\*
+Gráfico de dependência de inclusões para calcula.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{calcula_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Figuras__Planas__Imprime__Area_gac0d6d9fb68ed0e43ad9780f0c86cac51}{calc\+Area\+Triangulo} (float \&base)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor da área do triângulo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Planas__Imprime__Area_ga1091311f26d5adb888dae930fc1ec7d6}{calc\+Area\+Retangulo} (float \&base, float \&altura)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor da área do retângulo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Planas__Imprime__Area_gaabb19ec0d92baa5524a15b463f854158}{calc\+Area\+Quadrado} (float \&base)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor da área do quadrado. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Planas__Imprime__Area_gafc4965f40035f915dd29f3a2fe680339}{calc\+Area\+Circulo} (float \&raio)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor da área do círculo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Espaciais__Imprime__Area_gae484b707bcee07b0c5580440923326aa}{calc\+Area\+Piramide} (float \&base, float \&altura)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor da área da pirâmide. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Espaciais__Imprime__Area_ga54aa7364c2caf59fa3d1b1b303901050}{calc\+Area\+Cubo} (float \&aresta)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor da área do círculo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Espaciais__Imprime__Area_ga153e7a3b91362f17f7f22919dde85ebc}{calc\+Area\+Paralelepipedo} (float \&aresta1, float \&aresta2, float \&aresta3)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor da área do paralelepípedo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Espaciais__Imprime__Area_ga3a49e8821532ada5f803c815f8d99825}{calc\+Area\+Esfera} (float \&raio)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor da área do círculo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Planas__Imprime__Perimetro_gae49d939eed738e7168cd0efd8b40c09c}{calc\+Perimetro\+Triangulo} (float \&base)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime o valor do perimetro do triangulo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Planas__Imprime__Perimetro_gab29565d71c21097aef26e73d36b9c8a6}{calc\+Perimetro\+Retangulo} (float \&base, float \&altura)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime o valor do perimetro do retangulo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Planas__Imprime__Perimetro_gacaef8cc731e8f6564e033dadcbefa04f}{calc\+Perimetro\+Quadrado} (float \&base)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime o valor do perimetro do quadrado. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Planas__Imprime__Perimetro_ga6f116584d476bf2a78f83cb668e1f25b}{calc\+Perimetro\+Circulo} (float \&raio)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime o valor do perimetro do circulo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Espaciais__Imprime__Volume_gaa5acf0ff0f4eb8061d1b86334d2838de}{calc\+Volume\+Piramide} (float \&base, float \&altura)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor do volume da pirâmide. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Espaciais__Imprime__Volume_gaf35d29634faa808e187b6635ac6e1fb9}{calc\+Volume\+Cubo} (float \&aresta)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor do volume do cubo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Espaciais__Imprime__Volume_ga994d3c26012b734a4cbabf0ce0c7b75b}{calc\+Volume\+Paralelepipedo} (float \&aresta1, float \&aresta2, float \&aresta3)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor do volume do paralelepípedo. \end{DoxyCompactList}\item 
+void \hyperlink{group__Figuras__Espaciais__Imprime__Volume_gaddef3fdcde1a2b12007610961caffae5}{calc\+Volume\+Esfera} (float \&raio)
+\begin{DoxyCompactList}\small\item\em Função que imprime o valor do volume da esfera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Arquivo cabeçalho contendo a definição das funções que solicitam ao usuário os dados necessários para o cálculo da área, perímetroe volume com a figura geométrica e chamam as funções que realizam essa operação. 
+
+\begin{DoxyAuthor}{Autor}
+Ariel Oliveira (\href{mailto:ariel.oliveira01@gmail.com}{\tt ariel.\+oliveira01@gmail.\+com}) 
+\end{DoxyAuthor}
+\begin{DoxySince}{Desde}
+10/08/2017 
+\end{DoxySince}
+\begin{DoxyDate}{Data}
+15/08/2017 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{area_8h}{area.\+h} 
+\end{DoxySeeAlso}
